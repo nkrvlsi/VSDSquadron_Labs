@@ -64,7 +64,8 @@ II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
 
      cmd: **riscv64-unknown-elf-objdump -d sum1ton.o | less**
 
-     ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b21e43cf-409c-415b-a876-a8238ca19800)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/dad96f6c-ca64-4200-b0e6-4b028a2c216b)
 
      serach for main function in disassembly code
 
