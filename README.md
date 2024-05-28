@@ -39,7 +39,7 @@ II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
 	
  above cmd will create **sum1ton.o** file
  
-      other options
+other options
       
 	-O1/-Ofast
  
