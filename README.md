@@ -1,4 +1,4 @@
-<img width="224" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a3db79cc-6195-4fc2-a69a-a559dbaa773e"># VSDSquadron_Labs
+# VSDSquadron_Labs
 # *Task 1. C-lab & RISC-V lab: counting sum of numbers from 1 to n *
 ==============================
 
