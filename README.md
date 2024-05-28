@@ -124,7 +124,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
  - There is 1 additional user-visible register: **PC - program counter**
  	- pc holds the **address of the current instruction**.
 
-2. Base Instruction Format
+2. **Base Instruction Format**
 
 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/dbb47cd6-90fe-4951-a994-6f203fb48e0b)
 - All are fixed 32 bits in length and must 4-byte boundary aligned in memory
