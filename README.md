@@ -120,7 +120,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
    		- 6 types of instruction formats (R/I/S/U/SB/UJ)
          	- **R**-format **I**-formar **S**-format **U**-format **SB**-Format **UJ**-format
           		- R stands for **Register**
-          		- I stands for **immediate**
+          		- I stands for **immediate, loads**
           		- S refers to **store**
           		- U refers to **Upper immediate**
           		- B refers to **branch** type
