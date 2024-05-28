@@ -50,7 +50,7 @@ II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
 	 -march=rv32i -mabi=ilp32 to the linker. 
 
  
-![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f721f45f-e30b-44e7-8a62-baae21839498)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/6f9c67f3-b4ec-4ba2-9e94-aed6b5aa0edd)
 
 
   5. Open assembly level instructions for the c-code with objectdump with below command
