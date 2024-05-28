@@ -119,12 +119,12 @@ RISC-V stands for **Reduced Instruction set Computer**.
  		- Two primary base integer variants - **1. RV32I and 2. RV64I** - XLEN - refers width of an integer register in bits (either 32 or 64).
    		- 6 types of instruction formats (R/I/S/U/SB/UJ)
          	- **R**-format **I**-formar **S**-format **U**-format **SB**-Format **UJ**-format
-          		1. R stands for **Register**
-          		2. I stands for **immediate**
-          		3. S refers to **store**
-          		4. U refers to **Upper immediate**
-          		5. B refers to **branch** type
-          		6. J refers to **Jump** 
+          		- R stands for **Register**
+          		- I stands for **immediate**
+          		- S refers to **store**
+          		- U refers to **Upper immediate**
+          		- B refers to **branch** type
+          		- J refers to **Jump** 
             
           		![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4d049f09-3209-4f1a-9fa5-2f07aee13feb)
 
