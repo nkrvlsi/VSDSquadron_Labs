@@ -98,15 +98,15 @@ RISC-V stands for **Reduced Instruction set Computer**.
 	- RISC-V processors have following 5 different **Instruction Cycles**
  		- 1.Fetch 2.decode 3.execute 4.Memory 5.writeback
    - **instruction cycle** consists of several steps, each performs a specific function in the execution of the instruction. The major steps in the instruction cycle are:
-      	- **1   Fetch:**	Read instruction from instruction memory.
+     **1.   Fetch:**	Read instruction from instruction memory.
          	-   In the fetch cycle, the CPU retrieves the instruction from memory. The instruction is typically stored at the address specified by the program counter (PC). The PC is then incremented to point to the next instruction in memory.
-         - **2   Decode:**	 Read program registers.
+     **2.   Decode:**	 Read program registers.
             	- In the decode cycle, the CPU interprets the instruction and determines what operation needs to be performed. This involves identifying the opcode and any operands that are needed to execute the instruction.
-         - **3   Execute:**	Compute value or address.
+     **3.   Execute:**	Compute value or address.
              	-   In the execute cycle, the CPU performs the operation specified by the instruction. This may involve reading or writing data from or to memory, performing arithmetic or logic operations on data, or manipulating the control flow of the program.
-          - **4   Memory:** 	Read or write back data
-          - **5   Write Back:**	Write program registers.
-          - **6   PC:**		Update the program counter.
+     **4.   Memory:** 	Read or write back data
+     **5.   Write Back:**	Write program registers.
+     **6.   PC:**		Update the program counter.
         
  	- currently 4 base ISA's
  		- Each **base integer instruction set** is characterized by the **width of the integer registers** and the corresponding **size of the address space** and by the **number of integer registers**  
