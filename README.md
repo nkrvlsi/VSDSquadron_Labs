@@ -1,6 +1,6 @@
 # VSDSquadron_Labs
-*TASK 1. C-lab & RISC-V lab: counting sum of numbers from 1 to n *
-==============================
+*Task 1. C-lab & RISC-V lab: counting sum of numbers from 1 to n *
+============================
 
 Note: we already installed RISC-V toolchain.
 	write c-code file with gvim editor 
@@ -36,10 +36,16 @@ It will create a.out executable file
 II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
 -------------------------------------------------------------------------------
   3. cmd: riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
-	this should create *.o object file ex:sum1ton.o
-	try -O1/-Ofast options
+	above cmd will create **sum1ton.o** file
+      other options
+	-O1/-Ofast
+	-time                    Time the execution of each subprocess.
+	-o <file>                Place the output into <file>.
+	-march=rv32i -mabi=ilp32 to the linker. 
 
-  4. Open assembly level instructions for the c-code with objectdump with below command
+
+
+  5. Open assembly level instructions for the c-code with objectdump with below command
 	cmd: riscv64-unknown-elf-objdump -d sum1ton.o
 		here 
 		 objdump is object dump
