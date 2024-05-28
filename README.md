@@ -6,19 +6,25 @@ Note: we already installed RISC-V toolchain.
 
  ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/06629957-d926-46cb-8b0d-e05974537719)
 
-it will open gvim editor and write below code
+it will open gvim editor and write below c source code
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/3f0af1b4-4109-41c6-b2d1-19e495630b76)
 
 I. c-file compile with GCC and run
 ----------------------------------
-  1. compile c file 
+  1. compile c file (below cmd does 4 steps: prepocess, compile, assemble, link to create executable file)
   	cmd: gcc file.c
 	
- ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/1984bcc3-0a10-43f2-b810-750e9bad5756)
+ ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/28dfdce0-1c2e-4d35-a498-2f3227ae6add)
 
-  3. run compiled object file
+It will create a.out executable file
+  3. run executable file
   	cmd: ./a.out
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4c1da9e5-5ad0-4bda-9098-5365e96112b2)
+   check output in the terminal: 
+       sum of numbers from 1 to 5 is 15
+
 
 II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
 -------------------------------------------------------------------------------
