@@ -13,7 +13,8 @@ it will open gvim editor and write below c source code
 I. c-file compile with GCC and run
 ----------------------------------
   1. compile c file (below cmd does 4 steps: prepocess, compile, assemble, link to create executable file)
-  	cmd: gcc file.c
+  	
+   cmd: gcc file.c
 	
  ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/28dfdce0-1c2e-4d35-a498-2f3227ae6add)
 
