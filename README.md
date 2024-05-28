@@ -1,7 +1,7 @@
 # VSDSquadron_Labs
-**TASK 1. C-lab & RISC-V lab: **
+**TASK 1. C-lab & RISC-V lab: counting sum of numbers from 1 to n **
 ==============================
-**counting sum of numbers from 1 to n**
+
 Note: we already installed RISC-V toolchain.
 	write c-code file with gvim editor 
 
