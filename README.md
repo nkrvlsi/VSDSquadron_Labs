@@ -95,8 +95,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 - it is a **free & open ISA**
 	- **ISA** stands for **Instruction Set Architecture** 
 - RISC-V is a family of related ISA's
-        - RISC-V processors have following 5 satges
-        	- 1.Fetch 2.decode 3.execute 4.Memory 5.writeback
+	- RISC-V processors have following 5 satges
+ 		- 1.Fetch 2.decode 3.execute 4.Memory 5.writeback
  	- currently 4 base ISA's
  		- Each **base integer instruction set** is characterized by the **width of the integer registers** and the corresponding **size of the address space** and by the **number of integer registers**  
  		- Two primary base integer variants - **RV32I and RV64I** - XLEN - refers width of an integer register in bits (either 32 or 64).
