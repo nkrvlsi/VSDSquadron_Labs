@@ -1,6 +1,6 @@
 # VSDSquadron_Labs
-**1. C-lab & RISC-V lab:**
-==========================
+**TASK 1. C-lab & RISC-V lab:**
+==============================
 Note: we already installed RISC-V toolchain.
 	write c-code file with gvim editor 
 
