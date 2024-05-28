@@ -58,6 +58,7 @@ II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
      cmd: **riscv64-unknown-elf-objdump -d sum1ton.o**
 
      here
+
      	objdump is object dump
      
      	d is disassemble
