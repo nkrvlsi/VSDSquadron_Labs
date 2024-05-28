@@ -93,7 +93,11 @@ now count number of instructions 100dc-100b0= 2C/4=B='d11. No of instrctions did
 RISC-V stands for **Reduced Instruction set Computer**. 
 
 - it is a **free & open ISA**
-	- ISA stands for Instruction Set Architecture
+	- **ISA** stands for **Instruction Set Architecture** 
+- RISC-V is a family of related ISA's
+	- currently 4 base ISA's
+ 		- Each **base integer instruction set** is characterized by the **width of the integer registers** and the corresponding **size of the address space** and by the **number of integer registers**  
+ 		- Two primary base integer variants - **RV32I and RV64I** - XLEN - refers width of an integer register in bits (either 32 or 64).
   ## RISC-V ISA
   - 47 base instructions modular ISA
      
