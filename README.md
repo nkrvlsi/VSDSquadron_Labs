@@ -97,7 +97,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 - RISC-V is a family of related ISA's
 	- RISC-V processors have following 5 different **Instruction Cycles**
  		- 1.Fetch 2.decode 3.execute 4.Memory 5.writeback
-   			- **instruction cycle** consists of several steps, each performs a specific function in the execution of the instruction. The major steps in the instruction cycle are:
+
+     - **instruction cycle** consists of several steps, each performs a specific function in the execution of the instruction. The major steps in the instruction cycle are:
       			- **1   Fetch:**	Read instruction from instruction memory.
          			-   In the fetch cycle, the CPU retrieves the instruction from memory. The instruction is typically stored at the address specified by the program counter (PC). The PC is then incremented to point to the next instruction in memory.
          		- **2   Decode:**	 Read program registers.
