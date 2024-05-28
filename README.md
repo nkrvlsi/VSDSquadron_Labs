@@ -112,25 +112,18 @@ RISC-V stands for **Reduced Instruction set Computer**.
  		- Each **base integer instruction set** is characterized by the **width of the integer registers** and the corresponding **size of the address space** and by the **number of integer registers**  
  		- Two primary base integer variants - **1. RV32I and 2. RV64I** - XLEN - refers width of an integer register in bits (either 32 or 64).
      	1. 6 types of instruction formats (R/I/S/U/SB/UJ)
-         	- R-format I-formar S-format U-format SB-Format UJ-format
-       	3. **User visible Base integer registers** -  there are **31 general-purpose registers x1–x31**, which hold integer values.
-        		- Register x0 is hardwired to the constant 0.
-          		- For **RV32 the x registers are 32 bits wide**, and for **RV64 they are 64 bits wide**
-       	   			- each RISC-V instruction = 32 bits = 1 Word = 4 Bytes
+         	- **R**-format **I**-formar **S**-format **U**-format **SB**-Format **UJ**-format
+       	2. **User visible Base integer registers** -  there are **31 general-purpose registers x1–x31**, which hold integer values.
+       	   	- Register x0 is hardwired to the constant 0.
+          	- For **RV32 the x registers are 32 bits wide**, and for **RV64 they are 64 bits wide**
+       	   		- each RISC-V instruction = 32 bits = 1 Word = 4 Bytes
             		- we uses the term **XLEN** to refer to the current **width of an x register in bits** (either **32 or 64**).
               		- <img width="224" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b524a4b5-2a74-4d76-9848-b397a562b735">
  
-	      	    - There is 1 additional user-visible register: **PC - program counter**
+	      	- There is 1 additional user-visible register: **PC - program counter**
        			- pc holds the **address of the current instruction**.
   			
           		 
-   		-  Base ISA - 4 core instruction formats (R/I/S/U)
-
-        		- 
-        		- 6 types of instruction formats
-        			- R-format I-formar S-format U-format SB-Format UJ-format
-
-
   ## RISC-V ISA
   - 47 base instructions modular ISA
      
