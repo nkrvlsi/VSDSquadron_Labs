@@ -6,7 +6,8 @@ Note: we already installed RISC-V toolchain.
 
  ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/06629957-d926-46cb-8b0d-e05974537719)
 
-it will open gvim editor and write below c source code
+it will open gvim editor and write below c source code.
+
 Here I'm writing counting sum of numbers from 1 to n.
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/3f0af1b4-4109-41c6-b2d1-19e495630b76)
