@@ -104,9 +104,9 @@ RISC-V stands for **Reduced Instruction set Computer**.
             			- In the decode cycle, the CPU interprets the instruction and determines what operation needs to be performed. This involves identifying the opcode and any operands that are needed to execute the instruction.
            		- 3   Execute:	Compute value or address.
              			-   In the execute cycle, the CPU performs the operation specified by the instruction. This may involve reading or writing data from or to memory, performing arithmetic or logic operations on data, or manipulating the control flow of the program.
-             - 4   Memory: 	Read or write back data
-             - 5   Write Back:	Write program registers.
-             - 6   PC:		Update the program counter.
+             	- 4   Memory: 	Read or write back data
+             	- 5   Write Back:	Write program registers.
+             	- 6   PC:		Update the program counter.
         
  	- currently 4 base ISA's
  		- Each **base integer instruction set** is characterized by the **width of the integer registers** and the corresponding **size of the address space** and by the **number of integer registers**  
