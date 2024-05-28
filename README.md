@@ -111,9 +111,9 @@ RISC-V stands for **Reduced Instruction set Computer**.
  	- currently 4 base ISA's
  		- Each **base integer instruction set** is characterized by the **width of the integer registers** and the corresponding **size of the address space** and by the **number of integer registers**  
  		- Two primary base integer variants - **1. RV32I and 2. RV64I** - XLEN - refers width of an integer register in bits (either 32 or 64).
-     	1. 6 types of instruction formats (R/I/S/U/SB/UJ)
+     1. 6 types of instruction formats (R/I/S/U/SB/UJ)
          	- **R**-format **I**-formar **S**-format **U**-format **SB**-Format **UJ**-format
-       	2. **User visible Base integer registers** -  there are **31 general-purpose registers x1–x31**, which hold integer values.
+     2. **User visible Base integer registers** -  there are **31 general-purpose registers x1–x31**, which hold integer values.
        	   	- Register x0 is hardwired to the constant 0.
           	- For **RV32 the x registers are 32 bits wide**, and for **RV64 they are 64 bits wide**
        	   		- each RISC-V instruction = 32 bits = 1 Word = 4 Bytes
