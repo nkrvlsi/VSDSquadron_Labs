@@ -14,7 +14,9 @@ I. c-file compile with GCC and run
 ----------------------------------
   1. compile c file 
   	cmd: gcc file.c
-  2. run compiled object file
+	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/1984bcc3-0a10-43f2-b810-750e9bad5756)
+
+  3. run compiled object file
   	cmd: ./a.out
 
 II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
