@@ -20,12 +20,14 @@ I. c-file compile with GCC and run
 
 It will create a.out executable file
 
-  3. run executable file
-  	cmd: ./a.out
+  2. run executable file
+  	
+   cmd: ./a.out
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4c1da9e5-5ad0-4bda-9098-5365e96112b2)
+   
    check output in the terminal: 
-       sum of numbers from 1 to 5 is 15
+       **sum of numbers from 1 to 5 is 15**
 
 
 II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
