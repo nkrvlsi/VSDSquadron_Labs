@@ -142,6 +142,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 	- **sign bit** for all immediates always at the 31-bit of the instruction
  - There are a further two variants of the instruction formats (SB/UJ) based on the handling of immediates, as shown in Figure 2.3.
 
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/dffed509-5520-4033-ba61-c679827f5422)
+
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a0142f55-c687-42f6-a1db-c18bd5cc2cfd)
 
    
