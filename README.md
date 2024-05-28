@@ -95,8 +95,19 @@ RISC-V stands for **Reduced Instruction set Computer**.
 - it is a **free & open ISA**
 	- **ISA** stands for **Instruction Set Architecture** 
 - RISC-V is a family of related ISA's
-	- RISC-V processors have following 5 satges
+	- RISC-V processors have following 5 different **Instruction Cycles**
  		- 1.Fetch 2.decode 3.execute 4.Memory 5.writeback
+   			- **instruction cycle** consists of several steps, each performs a specific function in the execution of the instruction. The major steps in the instruction cycle are:
+      			1   Fetch:	Read instruction from instruction memory.
+         			-   In the fetch cycle, the CPU retrieves the instruction from memory. The instruction is typically stored at the address specified by the program counter (PC). The PC is then incremented to point to the next instruction in memory.
+         		2   Decode: 	 Read program registers.
+            			- In the decode cycle, the CPU interprets the instruction and determines what operation needs to be performed. This involves identifying the opcode and any operands that are needed to execute the instruction.
+           		3   Execute:	Compute value or address.
+             			-   In the execute cycle, the CPU performs the operation specified by the instruction. This may involve reading or writing data from or to memory, performing arithmetic or logic operations on data, or manipulating the control flow of the program.
+             		4   Memory: 	Read or write back data
+               		5   Write Back:	Write program registers.
+                 	6   PC:		Update the program counter.
+        
  	- currently 4 base ISA's
  		- Each **base integer instruction set** is characterized by the **width of the integer registers** and the corresponding **size of the address space** and by the **number of integer registers**  
  		- Two primary base integer variants - **RV32I and RV64I** - XLEN - refers width of an integer register in bits (either 32 or 64).
@@ -108,9 +119,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
               - <img width="224" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b524a4b5-2a74-4d76-9848-b397a562b735">
  
 	      - There is 1 additional user-visible register: **PC - program counter**
-
-
- 			
+       		- pc holds the **address of the current instruction**.
+  			
           		 
    		-  Base ISA - 4 core instruction formats (R/I/S/U)
 
