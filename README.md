@@ -94,7 +94,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 - it is a **free & open ISA**
 	- **ISA** stands for **Instruction Set Architecture** 
-- RISC-V is a family of related ISA's
+- RISC-V is a one of the ISA's family
 	- RISC-V processors have following 5 different **Instruction Cycles**
  		- 1.Fetch 2.decode 3.execute 4.Memory 5.writeback
    - **instruction cycle** consists of several steps, each performs a specific function in the execution of the instruction. The major steps in the instruction cycle are:
