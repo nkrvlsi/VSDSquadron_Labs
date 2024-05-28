@@ -38,11 +38,17 @@ II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
   3. cmd: riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
 	
  above cmd will create **sum1ton.o** file
+ 
       other options
+      
 	-O1/-Ofast
+ 
 	-time                    Time the execution of each subprocess.
+ 
 	-o <file>                Place the output into <file>.
+ 
 	-march=rv32i -mabi=ilp32 to the linker. 
+ 
 
 
 
