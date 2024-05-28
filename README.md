@@ -19,6 +19,7 @@ I. c-file compile with GCC and run
  ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/28dfdce0-1c2e-4d35-a498-2f3227ae6add)
 
 It will create a.out executable file
+
   3. run executable file
   	cmd: ./a.out
 
