@@ -114,7 +114,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
    		- 6 types of instruction formats (R/I/S/U/SB/UJ)
          	- **R**-format **I**-formar **S**-format **U**-format **SB**-Format **UJ**-format
 
-1. **User visible Base integer registers** -  there are **31 general-purpose registers x1–x31**, which hold integer values.
+1. **User visible Base integer registers**
+   -  there are **31 general-purpose registers x1–x31**, which hold integer values.
    	- Register x0 is hardwired to the constant 0.
    	- For **RV32 the x registers are 32 bits wide**, and for **RV64 they are 64 bits wide**
    		-  each RISC-V instruction = 32 bits = 1 Word = 4 Bytes
