@@ -102,7 +102,10 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
         		- RISC-V instructions are each 32 bits = 1 Word = 4 Bytes
         		- 6 types of instruction formats
-        			- R-format I-formar S-format U-format SB-Format UJ-format 
+        			- R-format I-formar S-format U-format SB-Format UJ-format
+
+        - RISC-V processors have following 5 satges
+        	- 1.Fetch 2.decode 3.execute 4.Memory 5.writeback
   ## RISC-V ISA
   - 47 base instructions modular ISA
      
