@@ -90,6 +90,7 @@ now count number of instructions 100dc-100b0= 2C/4=B='d11. No of instrctions did
 # **Task2: RISC-V Instruction set**
 ===================================
 
+RISC-V stands for **Reduced Instruction set Computer**. 
 
-
+- it is a **free & open ISA**
      
