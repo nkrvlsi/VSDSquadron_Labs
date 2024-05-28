@@ -127,10 +127,10 @@ RISC-V stands for **Reduced Instruction set Computer**.
 2. **Base Instruction Format**
 
 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/dbb47cd6-90fe-4951-a994-6f203fb48e0b)
-- All are fixed **32 bits in length** and must **4-byte boundary aligned** in memory
-- The RISC-V ISA keeps the **source (rs1 and rs2) and destination (rd) registers** at the same position in all formats to simplify decoding.
-- **Immediates** are packed towards the leftmost available bits in the instruction
-- **sign bit** for all immediates always at the 31-bit of the instruction
+	- All are fixed **32 bits in length** and must **4-byte boundary aligned** in memory
+	- The RISC-V ISA keeps the **source (rs1 and rs2) and destination (rd) registers** at the same position in all formats to simplify decoding.
+	- **Immediates** are packed towards the leftmost available bits in the instruction
+	- **sign bit** for all immediates always at the 31-bit of the instruction
 
   ## RISC-V ISA
   - 47 base instructions modular ISA
