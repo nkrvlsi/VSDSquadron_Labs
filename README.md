@@ -58,11 +58,14 @@ II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
      cmd: **riscv64-unknown-elf-objdump -d sum1ton.o**
 	
   here 
-		 objdump is object dump
-		 d is disassemble
-		 use |less cmd at end & search for /main
+  	objdump is object dump
+   	d is disassemble
+    	use |less cmd at end & search for /main
 
      cmd: **riscv64-unknown-elf-objdump -d sum1ton.o | less**
 
-     
+     ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b21e43cf-409c-415b-a876-a8238ca19800)
+
+     serach for main function in disassembly code
+
      
