@@ -1,4 +1,4 @@
-# VSDSquadron_Labs
+<img width="224" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a3db79cc-6195-4fc2-a69a-a559dbaa773e"># VSDSquadron_Labs
 # *Task 1. C-lab & RISC-V lab: counting sum of numbers from 1 to n *
 ==============================
 
@@ -104,7 +104,9 @@ RISC-V stands for **Reduced Instruction set Computer**.
       		- **User visible Base integer subset** -  there are 31 general-purpose registers x1–x31, which hold integer values.
         		- Register x0 is hardwired to the constant 0.
           		- For **RV32 the x registers are 32 bits wide**, and for **RV64 they are 64 bits wide**
-            		- we uses the term **XLEN** to refer to the current **width of an x register in bits** (either **32 or 64**). 
+            		- we uses the term **XLEN** to refer to the current **width of an x register in bits** (either **32 or 64**).
+              - <img width="224" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b524a4b5-2a74-4d76-9848-b397a562b735">
+
 
  			
           		 
