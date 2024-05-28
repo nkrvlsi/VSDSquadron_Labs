@@ -3,7 +3,9 @@
 ============================
 
 Note: we already installed RISC-V toolchain.
-1. write c-code file with gvim editor 
+1. write c-code file with gvim editor
+
+   cmd: gvim sum1ton.c
 
  ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/06629957-d926-46cb-8b0d-e05974537719)
 
@@ -17,7 +19,7 @@ I. c-file compile with GCC and run
 ----------------------------------
   2. compile c file (below cmd does 4 steps: prepocess, compile, assemble, link to create executable file)
   	
-   cmd: gcc file.c
+   cmd: **gcc file.c**
 	
  ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/28dfdce0-1c2e-4d35-a498-2f3227ae6add)
 
@@ -25,7 +27,7 @@ It will create a.out executable file
 
   3. run executable file
   	
-   cmd: ./a.out
+   cmd: **./a.out**
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4c1da9e5-5ad0-4bda-9098-5365e96112b2)
    
@@ -35,7 +37,7 @@ It will create a.out executable file
 
 II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
 -------------------------------------------------------------------------------
-  4. cmd: riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+  4. cmd: **riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c**
 	
  above cmd will create **sum1ton.o** file
  
@@ -53,9 +55,9 @@ II. compile same c file with RISC-V gcc compiler & see genearted assemmbly code
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/6f9c67f3-b4ec-4ba2-9e94-aed6b5aa0edd)
 
 
-  5. Open assembly level instructions for the c-code with objectdump with below command
+  5. check how assembly level instructions for the c-code getting generated with below command
      
-	cmd: riscv64-unknown-elf-objdump -d sum1ton.o
+	cmd: **riscv64-unknown-elf-objdump -d sum1ton.o**
 		here 
 		 objdump is object dump
 		 d is disassemble
