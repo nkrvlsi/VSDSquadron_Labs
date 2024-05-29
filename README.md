@@ -432,7 +432,31 @@ RISC-V stands for **Reduced Instruction set Computer**.
      		  **PC = PC + (immediate*4)**
    - **Observations**:
      	- *immediate* is number of instructions to move (remember, specifies words) either forward (+) or backwards (–)
+     	  
+**<ins>RISC-V Feature, n×16-bit instructions</ins>:**  
+   - Extensions to RISC-V base ISA support 16-bit compressed instructions and also variable-length instructions that are multiples of 16-bits in length
+   - 16-bit = half-word
+   - **To enable this, RISC-V scales the branch offset to be half-words even when there are no 16-bit instructions.**
+   - Reduces branch reach by half and means that ½ of possible targets will be errors on RISC-V processors that only support 32-bit instructions (as used in this class)
+   - RISC-V conditional branches can only reach ± 2<sup>10</sup> × 32-bit instructions either side of PC.
+     
+**<ins>RISC-V B-Format for Branches</ins>:**
+   - B-format is mostly same as S-Format, with two register sources (rs1/rs2) and a 12-bit immediate
+   - But now immediate represents values -2<sup>12</sup> to +2<sup>12</sup>-2 in 2-byte increments
+   - The 12 immediate bits encode even 13-bit signed byte offsets (lowest bit of offset is always zero, so no need to store it)
 
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4426967f-9ea1-475a-ae81-6b8d47336134)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/58b86c58-e531-4a5f-bac6-8f880358a8c1)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/1c391ffe-593c-43c0-a18f-3e56b46e73c4)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/d800f301-fcd4-43db-8dc3-020e3241c505)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c8da153d-2b58-4922-8a21-39fc516aa407)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/87cd9bb8-f71a-4bb6-8e5a-ad0515874f01)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a15e648f-8105-4db5-9263-d5da20825661)
+     
 ### 6. <ins>UJ-format</ins> (jump)
 
 **Subroutine calls, jumps (UJ), and branches (SB)**
