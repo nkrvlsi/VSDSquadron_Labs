@@ -498,7 +498,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
  ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/1fc9cb5a-7f8f-4c08-bf1b-865ffa8df52b)
  
 - ret and jr psuedo-instructions
-  	ret = jr ra = jalr x0, ra, 0  
+  	- ret = jr ra = jalr x0, ra, 0  
 - Call function at any 32-bit absolute address  
   	lui x1, <hi 20 bits>  
   	jalr ra, x1, <lo 12 bits>  
