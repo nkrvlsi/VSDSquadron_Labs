@@ -283,6 +283,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e29b28fe-ec73-432f-9f5a-d79246c0272c)
 
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/81669faf-9209-44bd-aab6-5cb53586526e)
+
    The upper 12 bits of I-type is an immediate number. The opcode is different from other instruction formats because the corresponding specific operations are different, and other parts are very similar to R-type
 
    - In a RISC processor, access to memory is only done through special load and store instructions.
