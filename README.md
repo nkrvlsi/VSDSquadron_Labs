@@ -357,8 +357,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
      - Has 20-bit immediate in upper 20 bits of 32-bit instruction word
      - One destination register, rd
      - Used for two instructions
-     		- LUI – Load Upper Immediate
-       		– AUIPC – Add Upper Immediate to PC
+     		- **LUI** – Load Upper Immediate
+       		– **AUIPC** – Add Upper Immediate to PC
      - LUI to create long immediates:
 
 		lui writes the upper 20 bits of the destination with the immediate value, and clears the lower 12 bits.
@@ -379,12 +379,12 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 	 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e841facc-a6cd-4c2c-96b3-ba0548bffe74)
 
-    -  AUIPC: Adds upper immediate value to PC
+    -  **AUIPC**: Add upper immediate value to PC
     	-  Adds upper immediate value to PC and places result in destination register
     	-  Used for PC-relative addressing
 
-        		Label: auipc x10, 0
-        			-puts address of label into x10
+       		Label: auipc x10, 0
+        		-puts address of label into x10
       
 6. **SB-format** (Branch)
 
