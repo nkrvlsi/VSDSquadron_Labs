@@ -105,9 +105,10 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
      **2.   Instruction Decode (ID):**	 Read program registers.
      - In the decode cycle, the CPU interprets the instruction and determines what operation needs to be performed. This involves identifying the opcode and any operands that are needed to execute the instruction. It basically decodes the instruction given by the Program Counter current address.
+     - ex: Read **rs1 ([19:15]bits)** and **rs2 ([24:20]bits)** souce registers (5 bits each) and write rersult into **rd ([11:7]bits)** target register. The [31:25] funct7 and [14:12] funct3 fields select the type of operation, finally the opcode for R-type instruction is specified at [6:0]bits.
 
      **3.   Execute:**	Compute value or address.
-     -   In the execute cycle, the CPU performs the operation specified by the instruction. This may involve reading or writing data from or to memory, performing arithmetic or logic operations on data, or manipulating the control flow of the program.
+     -   In the execute cycle, the CPU **performs the operation specified by the instruction**. This may involve reading or writing data from or to memory, **performing arithmetic or logic operations on data**, or manipulating the control flow of the program.
 
      **4.   Memory (Memory access):** 	Read or write back data
      -   load and store instructions transfer a value between the registers and memory. (register ---> memory). LOAD is encoded in I type format where as the STORE is encoded in S type instruction format.
