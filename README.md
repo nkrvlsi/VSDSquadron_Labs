@@ -383,8 +383,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
     	-  Adds upper immediate value to PC and places result in destination register
     	-  Used for PC-relative addressing
 
-       		Label: auipc x10, 0
-        		-puts address of label into x10
+       			Label: auipc x10, 0
+        			-puts address of label into x10
       
 6. **SB-format** (Branch)
 
