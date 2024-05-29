@@ -159,7 +159,17 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a0142f55-c687-42f6-a1db-c18bd5cc2cfd)
 
-   
+ - In Figure 2.3 each immediate subfield is labeled with the bit position (**imm[x]**) in the immediate value being produced.
+ - The only difference between the S and SB formats is that the 12-bit immediate field is used to encode branch offsets in multiples of 2 in the SB format.
+ 	- Instead of shifting all bits in the instructionencoded immediate left by one in hardware as is conventionally done, the middle bits (imm[10:1])
+
+    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c025508c-aa3a-41e6-af81-69e92abbecbb)
+ - Figure 2.4: Types of immediate produced by RISC-V instructions. The fields are labeled with the instruction bits used to construct their value. Sign extension always uses inst[31].
+ - and sign bit stay in fixed positions, while the lowest bit in S format (inst[7]) encodes a high-order bit in SB format.
+ - Similarly, the only difference between the U and UJ formats is that the 20-bit immediate is shifted left by 12 bits to form U immediates and by 1 bit to form J immediates.
+	- The location of instruction bits in the U and UJ format immediates is chosen to maximize overlap with the other formats and with each other.
+
+
 
 
   ## RISC-V ISA
