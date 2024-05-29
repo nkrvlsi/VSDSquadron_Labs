@@ -135,7 +135,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
             
           		![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4d049f09-3209-4f1a-9fa5-2f07aee13feb)
 
-1. **User visible Base integer registers**
+1. **User visible Base integer registers** - General-Purpose Register and PC
    -  there are **31 general-purpose registers x1–x31**, which hold integer values.
    	- Register x0 is hardwired to the constant 0.
    	- For **RV32 the x registers are 32 bits wide**, and for **RV64 they are 64 bits wide**
@@ -171,7 +171,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 ## Now lets discuss each instruction formats (R/I/S/U/SB/UJ) in details below
 
-1. R-format (Register)	- Arithmetic and logical operations
+1. **R-format (Register)**	- Arithmetic and logical operations
 
      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/3e6777fc-92ca-4446-8e9c-0f9e6c722caa)
 
@@ -272,11 +272,11 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/df097697-02fb-438a-98a4-d14376179d4f)
 
-3. I-format (immediate, loads)
-4. S-format (store)
-5. U-format (Upper immediate)
-6. SB-format (Branch)
-7. UJ-format (jump)
+2. **I-format** (immediate, loads)
+3. **S-format** (store)
+4. **U-format** (Upper immediate)
+5. **SB-format** (Branch)
+6. **UJ-format** (jump)
 
 
   ## RISC-V ISA
