@@ -425,7 +425,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - **Let immediate specify #words instead of #bytes**
      	- Instead of specifying ± 2<sup>11</sup> bytes from the PC, we will now specify ± 2<sup>11</sup> words = ± 2</sup>13</sup> byte addresses around PC
      	  
-**ins>Branch Calculation</ins>:**
+**<ins>Branch Calculation</ins>:**
    - If we **don’t** take the branch:
      		**PC = PC+4** = next instruction  	
    - If we **do** take the branch:
