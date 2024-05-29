@@ -427,9 +427,9 @@ RISC-V stands for **Reduced Instruction set Computer**.
      	  
 **<ins>Branch Calculation</ins>:**
    - If we **don’t** take the branch:  
-     		**PC = PC+4** = next instruction  	
+     		  **PC = PC+4** = next instruction  	
    - If we **do** take the branch:  
-     		**PC = PC + (immediate*4)**
+     		  **PC = PC + (immediate*4)**
    - **Observations**:
      	- *immediate* is number of instructions to move (remember, specifies words) either forward (+) or backwards (–)
 
