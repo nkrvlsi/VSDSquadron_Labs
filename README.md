@@ -423,6 +423,15 @@ RISC-V stands for **Reduced Instruction set Computer**.
      	- PC is typed as a pointer to a word
      	- can do C-like pointer arithmetic
    - **Let immediate specify #words instead of #bytes**
+     	- Instead of specifying ± 2<sup>11</sup> bytes from the PC, we will now specify ± 2<sup>11</sup> words = ± 2</sup>13</sup> byte addresses around PC
+     	  
+**ins>Branch Calculation</ins>:**
+   - If we **don’t** take the branch:
+     		**PC = PC+4** = next instruction  	
+   - If we **do** take the branch:
+     		**PC = PC + (immediate*4)**
+   - **Observations**:
+     	- *immediate* is number of instructions to move (remember, specifies words) either forward (+) or backwards (–)
 
 ### 6. <ins>UJ-format</ins> (jump)
 
