@@ -100,20 +100,25 @@ RISC-V stands for **Reduced Instruction set Computer**.
  		- 1.Fetch 2.decode 3.execute 4.Memory 5.writeback
    - **instruction cycle** consists of several steps, each performs a specific function in the execution of the instruction. The major steps in the instruction cycle are:
 
-     **1.   Fetch:**	Read instruction from instruction memory.
-     -   In the fetch cycle, the CPU retrieves the instruction from memory. The instruction is typically stored at the address specified by the program counter (PC). The PC is then incremented to point to the next instruction in memory.
+     **1.   Instruction Fetch (IF):**	Read instruction from instruction memory.
+     -   In the instruction fetch cycle, the CPU retrieves the instruction from memory. The instruction then stored at the address specified by the program counter (PC). For every clock cycle, PC incremented by 4 (Byte aligned) to point next instruction in memory.
 
-     **2.   Decode:**	 Read program registers.
-     - In the decode cycle, the CPU interprets the instruction and determines what operation needs to be performed. This involves identifying the opcode and any operands that are needed to execute the instruction.
+     **2.   Instruction Decode (ID):**	 Read program registers.
+     - In the decode cycle, the CPU interprets the instruction and determines what operation needs to be performed. This involves identifying the opcode and any operands that are needed to execute the instruction. It basically decodes the instruction given by the Program Counter current address.
 
      **3.   Execute:**	Compute value or address.
      -   In the execute cycle, the CPU performs the operation specified by the instruction. This may involve reading or writing data from or to memory, performing arithmetic or logic operations on data, or manipulating the control flow of the program.
 
-     **4.   Memory:** 	Read or write back data
+     **4.   Memory (Memory access):** 	Read or write back data
+     -   load and store instructions transfer a value between the registers and memory. (register ---> memory). LOAD is encoded in I type format where as the STORE is encoded in S type instruction format.
+     
+     **5.   Write Back (WB):**	Write program registers.
+     -	It is the final stage in execution of the instruction in RISC-V pipeline. During this stage, the result of instruction will be written back to the register file, that will be avialable for the future instructions.
+     -	The control signals ensure that the correct register (destination register) is updated with the correct data.
+     -	Example: ADD rd, rs1, rs2 In the WB stage, the result from the ALU is written back to the destination register rd.
+     -	Example: LW rd, offset(rs1) In the WB stage, the data read from memory is written to the destination register rd.
 
-     **5.   Write Back:**	Write program registers.
-
-     **6.   PC:**		Update the program counter.
+     **6.   PC:**		Update the program counter **address by 4** for the next instruction to be executed .
         
  	- currently 4 base ISA's
  		- Each **base integer instruction set** is characterized by the **width of the integer registers** and the corresponding **size of the address space** and by the **number of integer registers**  
