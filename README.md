@@ -133,7 +133,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
           		- B refers to **branch** type
           		- J refers to **Jump** 
             
-          		![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4d049f09-3209-4f1a-9fa5-2f07aee13feb)
+        ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4d049f09-3209-4f1a-9fa5-2f07aee13feb)
 
 1. **User visible Base integer registers** - General-Purpose Register and PC
    -  there are **31 general-purpose registers x1–x31**, which hold integer values.
