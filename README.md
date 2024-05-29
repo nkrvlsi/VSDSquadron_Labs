@@ -487,8 +487,22 @@ RISC-V stands for **Reduced Instruction set Computer**.
 **<ins>*jalr* Instruction (I-Format)</ins>:**
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/0d17ff61-6a8e-407f-95a0-8d9be7445433)
-
-
+- **jalr rd, rs1, offset**
+- Writes PC+4 to rd (return address)
+- Sets PC = rs1 + offset
+- Uses same immediates as arithmetic & loads
+  	- **no** multiplication by 2 bytes
+  	  
+**<ins>Uses of *jalr*</ins>:**
+ 
+ ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/1fc9cb5a-7f8f-4c08-bf1b-865ffa8df52b)
+ 
+- ret and jr psuedo-instructions
+  	ret = jr ra = jalr x0, ra, 0  
+- Call function at any 32-bit absolute address  
+  	lui x1, <hi 20 bits>  
+  	jalr ra, x1, <lo 12 bits>  
+- Jump PC-relative with 32-bit offset
 
   ## RISC-V ISA cheatsheet
   - 47 base instructions modular ISA
