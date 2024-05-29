@@ -150,7 +150,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/dbb47cd6-90fe-4951-a994-6f203fb48e0b)
 	
- 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/2f34eb18-bb75-4a41-ac99-8eefec86ea10)
+ 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e637167b-e54d-42f5-b7ed-ce753219d848)
 
 	- All are fixed **32 bits in length** and must **4-byte boundary aligned** in memory
 	- The RISC-V ISA keeps the **source (rs1 and rs2) and destination (rd) registers** at the same position in all formats to simplify decoding.
