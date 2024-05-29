@@ -174,7 +174,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 ## Now lets discuss each instruction formats (R/I/S/U/SB/UJ) in details below
 
-### 1. **<ins>R-format (Register)</ins>**	- Arithmetic and logical operations
+### 1. R-format (Register)	- Arithmetic and logical operations
 
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/04038e2b-6c21-4eb0-9c06-a9fbef6a0d4e)
@@ -279,7 +279,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/df097697-02fb-438a-98a4-d14376179d4f)
 
-### 2. **<ins>I-format</ins>** - (immediate, loads)
+
+### 2. I-format - (immediate, loads)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e29b28fe-ec73-432f-9f5a-d79246c0272c)
 
