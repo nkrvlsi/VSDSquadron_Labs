@@ -388,10 +388,10 @@ RISC-V stands for **Reduced Instruction set Computer**.
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e841facc-a6cd-4c2c-96b3-ba0548bffe74)
 
 -  **AUIPC**: Add upper immediate value to PC
-    	-  Adds upper immediate value to PC and places result in destination register
-    	-  Used for PC-relative addressing
-   		Label: auipc x10, 0
-   			- puts address of label into x10
+  	- Adds upper immediate value to PC and places result in destination register
+-  sed for PC-relative addressing
+  	- Label: auipc x10, 0
+     		- Puts address of label into x10
       
 ### 5. <ins>SB-format<ins> (Branch)
 
