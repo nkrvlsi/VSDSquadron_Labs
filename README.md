@@ -307,6 +307,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 	
  	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/9c12dca3-0a11-4269-8646-83a8a1a2ebee)
 
+	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f2e3efc5-d583-4991-a169-7d30239accd3)
+
 
 3. **S-format** (store)
 
