@@ -390,12 +390,14 @@ RISC-V stands for **Reduced Instruction set Computer**.
 -  **AUIPC**: Add upper immediate value to PC
   	- Adds upper immediate value to PC and places result in destination register
 -  sed for PC-relative addressing
-  	- Label: auipc x10, 0
+  	- **Label: auipc x10, 0**
    - Puts address of label into x10
       
-### 5. <ins>SB-format<ins> (Branch)
+### 5. <ins>SB-format</ins> (Branch)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/bc390bf3-a21c-46ec-a20e-6fb71fbc55ee)
 
 **<ins>Branching Instructions</ins>:**
    - *beq, bne,bge,blt*
@@ -446,7 +448,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - But now immediate represents values -2<sup>12</sup> to +2<sup>12</sup>-2 in 2-byte increments
    - The 12 immediate bits encode even 13-bit signed byte offsets (lowest bit of offset is always zero, so no need to store it)
 
-![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4426967f-9ea1-475a-ae81-6b8d47336134)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/2ed148f6-3aba-4bd2-b384-6e5152568739)
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/58b86c58-e531-4a5f-bac6-8f880358a8c1)
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/1c391ffe-593c-43c0-a18f-3e56b46e73c4)
@@ -461,6 +463,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 ### 6. <ins>UJ-format</ins> (jump)
 
 **Subroutine calls, jumps (UJ), and branches (SB)**  
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5e5a198d-04e2-477b-8005-00c977faffe1)
 
 **<ins>UJ-Format Instructions</ins>:**
 - For branches, we assumed that we won’t want to branch too far, so we can specify a **change** in the PC
