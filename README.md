@@ -322,7 +322,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 	    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/fcddbb52-5f5b-4362-aefb-16c89079c33e)
 
 
-4. **S-format** (store)
+3. **S-format** (store)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/379041a4-e802-4c65-9a8b-7e23e62c151c)
 
@@ -340,9 +340,17 @@ RISC-V stands for **Reduced Instruction set Computer**.
  	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e7cdddb7-2965-4a54-93c5-5c42d00692b9)
 
 
-5. **U-format** (Upper immediate)
+4. **U-format** (Upper immediate)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/d55d7d53-13da-48e8-861d-09eb6c919067)
+
+   - How do we deal with 32-bit immediates?
+		– Our I-type instructions only give us 12 bits
+   - Solution: Need a new instruction format for dealing with the rest of the 20 bits.
+   - This instruction should deal with:
+		– a destination register to put the 20 bits into
+		– the immediate of 20 bits
+		– the instruction opcode
 
 6. **SB-format** (Branch)
 
