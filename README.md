@@ -169,7 +169,14 @@ RISC-V stands for **Reduced Instruction set Computer**.
  - Similarly, the only difference between the U and UJ formats is that the 20-bit immediate is shifted left by 12 bits to form U immediates and by 1 bit to form J immediates.
 	- The location of instruction bits in the U and UJ format immediates is chosen to maximize overlap with the other formats and with each other.
 
+## Now lets discuss each instruction formats (R/I/S/U/SB/UJ) in details below
 
+1. R-format (Register)
+2. I-format (immediate, loads)
+3. S-format (store)
+4. U-format (Upper immediate)
+5. B-format (Branch)
+6. J-format (jump)
 
 
   ## RISC-V ISA
