@@ -171,12 +171,20 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 ## Now lets discuss each instruction formats (R/I/S/U/SB/UJ) in details below
 
-1. R-format (Register)
-2. I-format (immediate, loads)
-3. S-format (store)
-4. U-format (Upper immediate)
-5. B-format (Branch)
-6. J-format (jump)
+1. R-format (Register)	- Arithmetic and logical operations
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e32e4c2a-77fd-408a-9c3a-b44d52304754)
+
+   - Each field is viewed as its own unsigned int
+	– 5-bit fields can represent any number 0-31, while 7-bit fields can represent any number 0-128, etc.
+   - **opcode [6:0]bits** (7 bits): partially specifies operation
+	– e.g. R-types have opcode = 0b0110011, SB (branch) types have opcode = 0b1100011.
+   - funct7+funct3
+3. I-format (immediate, loads)
+4. S-format (store)
+5. U-format (Upper immediate)
+6. SB-format (Branch)
+7. UJ-format (jump)
 
 
   ## RISC-V ISA
