@@ -291,10 +291,19 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - These instructions come in a number of variants to be able to load values of different bit-size.
    - The LD (Load Doubleword) is only supported on RV64I as it loads a 64-bit value.
    - A word refers to a 32-bit value, so LW (Load Word) could be used to load a regular 32-bit integer. While working with strings you may want to load individual bytes by using LB.
+   - First notice that, if instruction has immediate, then it uses at most 2 registers (1 src, 1 dst).
+   - Key difference: Only **imm** field is different from R-format: rs2 and funct7 replaced by 12-bit signed immediate, mm[11:0]
+  	• opcode (7): uniquely specifies the instruction
+	• rs1 (5): specifies a register operand
+	• rd (5): specifies destination register that receives result of computation
 
 3. **S-format** (store)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/379041a4-e802-4c65-9a8b-7e23e62c151c)
+
+    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/15d6c10b-4a19-47ea-a2f6-feea2dd2be79)
+
+   - The characteristic of S-type instruction is that **there is no rd register**. In this type of instruction, the **immediate is divided into two parts**, the first part is in bit11-5, and the second part is in bit4-0. The 5 bits of the immediate 4-0 occupy the position of rd in other instruction formats, and 5-11occupy the position of funct7. Explain that the command format does not need to write back. That is, read the two values from the two registers and perform the operation together with theimmediate, and write the result to the register after the operation is over.
 
 4. **U-format** (Upper immediate)
 
