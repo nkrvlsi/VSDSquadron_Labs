@@ -174,7 +174,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 ## Now lets discuss each instruction formats (R/I/S/U/SB/UJ) in details below
 
-### 1. R-format (Register)	- Arithmetic and logical operations
+### 1. <ins>R-format</ins> (Register)	- Arithmetic and logical operations
 
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/04038e2b-6c21-4eb0-9c06-a9fbef6a0d4e)
@@ -280,7 +280,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/df097697-02fb-438a-98a4-d14376179d4f)
 
 
-### 2. I-format - (immediate, loads)
+### 2. <ins>I-format</ins> - (immediate, loads)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e29b28fe-ec73-432f-9f5a-d79246c0272c)
 
@@ -318,12 +318,13 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		– This is very similar to the add-immediate operation but **used to create address, not to create final result**
 	- Value loaded from memory is stored in rd
  	- Example:  **lw x14, 8(x2)**
-   	    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5b2e27b8-0714-408b-b610-1750b8627624)
+   	  
+	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5b2e27b8-0714-408b-b610-1750b8627624)
 
-	    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/fcddbb52-5f5b-4362-aefb-16c89079c33e)
+	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/fcddbb52-5f5b-4362-aefb-16c89079c33e)
 
 
-### 3. **<ins>S-format</ins>** (store)
+### 3. <ins>S-format</ins> (store)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/379041a4-e802-4c65-9a8b-7e23e62c151c)
 
@@ -341,7 +342,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
  	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e7cdddb7-2965-4a54-93c5-5c42d00692b9)
 
 
-### 4. **<ins>U-format</ins>** (Upper immediate)
+### 4. <ins>U-format</ins> (Upper immediate)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/d55d7d53-13da-48e8-861d-09eb6c919067)
 
@@ -387,7 +388,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
        			Label: auipc x10, 0
         			-puts address of label into x10
       
-### 5. **<ins>SB-format<ins>** (Branch)
+### 5. <ins>SB-format<ins> (Branch)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
 
@@ -408,7 +409,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 **<ins>PC-Relative Addressing</ins>:**
    - PC-Relative Addressing: Use the immediate field as a two’s complement offset to PC
 
-### 6. **<ins>UJ-format</ins>** (jump)
+### 6. <ins>UJ-format</ins> (jump)
 
 	**Subroutine calls, jumps (UJ), and branches (SB)**
 	- RISC-V's subroutine call jal (jump and link) places its return address in a register. This is faster in many computer designs, because it saves a memory access compared to systems that push a return address directly on a stack in memory. jal has a 20-bit signed (two's complement) offset. The offset is multiplied by 2, then added to the PC to generate a relative address to a 32-bit instruction. If the result is not at a 32-bit address (i.e., evenly divisible by 4), the CPU may force an exception
