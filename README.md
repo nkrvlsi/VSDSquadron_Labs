@@ -415,6 +415,14 @@ RISC-V stands for **Reduced Instruction set Computer**.
      	- Branches generally change the PC by a small amount
      	- Can specify ± 2<sup>11</sup> addresses from the PC
    - Why not use byte address offset from PC as the immediate?
+     
+**<ins>Branching Reach</ins>**:
+   - Recall: RISCV uses 32-bit addresses, and memory is byte-addressed
+   - Instructions are “word-aligned”: Address is always a multiple of 4 (in bytes).
+   - PC ALWAYS points to an instruction
+     	- PC is typed as a pointer to a word
+     	- can do C-like pointer arithmetic
+   - **Let immediate specify #words instead of #bytes**
 
 ### 6. <ins>UJ-format</ins> (jump)
 
