@@ -367,8 +367,13 @@ RISC-V stands for **Reduced Instruction set Computer**.
    			lui x10, 0x87654 	# x10 = 0x87654000
    			addi x10, x10, 0x321 	# x10 = 0x87654321
 
-     - 
-
+     - **Corner Case**:
+     		-  How to set 0xDEADBEEF?
+       			lui x10, 0xDEADB # x10 = 0xDEADB000
+			addi x10, x10,0xEEF # x10 = 0xDEAD**A**EEF
+        	- addi 12-bit immediate is always sign-extended!
+       		- if top bit of the 12-bit immediate is a 1, it will subtract -1 from upper 20 bits
+	
 6. **SB-format** (Branch)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
