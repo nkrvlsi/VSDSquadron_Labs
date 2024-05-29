@@ -181,6 +181,12 @@ RISC-V stands for **Reduced Instruction set Computer**.
    		- e.g. R-types have opcode = 0b0110011=0x33, SB (branch) types have opcode = 0b1100011=0x63.
    - funct7 [31:25]bits (7) + funct3 [14:12] (3) : total 10 bits.  combined with opcode, these two fields describe what operation to perform.
    		- How many R-instructions can we encode? Ans: with opcode fixed at 0x33, just funct varies:  (2<sup>7</sup>) x (2<sup>3</sup>)= (2<sup>10</sup>) = 1024
+   - rs1 (5): 1st operand (“source register 1”)
+   - rs2 (5): 2nd operand (second source register)
+   - rd (5): “destination register” — receives the result of computation
+
+     ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a8f2f8ae-4ae7-4d2d-8d92-0f4524bf0ae5)
+
 3. I-format (immediate, loads)
 4. S-format (store)
 5. U-format (Upper immediate)
