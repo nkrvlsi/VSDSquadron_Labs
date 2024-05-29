@@ -360,10 +360,10 @@ RISC-V stands for **Reduced Instruction set Computer**.
      		- LUI – Load Upper Immediate
        		– AUIPC – Add Upper Immediate to PC
      - LUI to create long immediates:
-     		- lui writes the upper 20 bits of the destination with the immediate value, and clears the lower 12 bits
-       		- Together with an addi to set low 12 bits, can create any 32-bit value in a register using two instructions (lui/addi).
-     		**lui x10, 0x87654** 	**# x10 = 0x87654000**
-		**addi x10, x10, 0x321** 	**# x10 = 0x87654321**
+     	lui writes the upper 20 bits of the destination with the immediate value, and clears the lower 12 bits
+       	Together with an addi to set low 12 bits, can create any 32-bit value in a register using two instructions (lui/addi).
+       **lui x10, 0x87654** 	**# x10 = 0x87654000**
+       **addi x10, x10, 0x321** 	**# x10 = 0x87654321**
      - 
 
 6. **SB-format** (Branch)
