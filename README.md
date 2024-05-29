@@ -390,11 +390,22 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
 
+**Branching Instructions:**
    - *beq, bne,bge,blt*
    		- Need to specify an **address** to go to
    		- Also take **two registers** to compare
    		- Doesn’t write into a register (similar to stores)
    - How to encode label, i.e., where to branch to?
+     
+**Branching Instruction Usage:** 
+   - Branches typically used for loops (if-else, while, for)
+   		- Loops are generally small (< 50 instructions)
+   - **Recall:** Instructions stored in a localized area of memory (Code/Text)
+   		- Largest branch distance limited by size of code
+     		- Address of current instruction stored in the program counter (PC)
+         
+**PC-Relative Addressing:**
+   - PC-Relative Addressing: Use the immediate field as a two’s complement offset to PC
 
 6. **UJ-format** (jump)
 
