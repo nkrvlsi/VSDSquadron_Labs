@@ -316,30 +316,31 @@ That means you can avoid adding encoding for an MV instruction to the instructio
 
 One great example of the benefits of pseudo instructions is the LI and LA instructions. Because all RISC-V instructions must be 32-bit wide, they cannot contain a full 32-bit address. Thus loading a 32-bit address into a register has to be done as a two-step process. First, we load the top 20 bits with either LUI or AUIP and then we add the remaining 12 bits with ADDI.
 """
-.section .text             # Mark code section
-  LUI  a1,     %hi(msg)    # Load upper 20 bits of msg address
-  ADDI a1, a1, %lo(msg)    # Load lower 12 bits of msg address
-  CALL puts                # Call puts function to show string
-loop:
-  J loop                   # Jump to loop - Infinite loop
-.section .data             # Mark section for R/W data storage
-  msg: .string "Hello World\n"
+	.section .text             # Mark code section
+	  LUI  a1,     %hi(msg)    # Load upper 20 bits of msg address
+	  ADDI a1, a1, %lo(msg)    # Load lower 12 bits of msg address
+	  CALL puts                # Call puts function to show string
+	loop:
+	  J loop                   # Jump to loop - Infinite loop
+	.section .data             # Mark section for R/W data storage
+	  msg: .string "Hello World\n"
 """
 To create code that can be loaded into any memory address (position independent code) we use the LA instruction which translated into AUIP and ADDI.
 
 By using pseudo-instructions we greatly simplify this code:
 
 """
-.section .text             # Mark code section
-  LI a1, msg               # Load immediate. Julia expands to 
-                           # multiple instructions as needed.
-  CALL puts                # Call puts function to show string
-loop:
-  J loop                   # Jump to loop - Infinite loop
-.section .data             # Mark section for R/W data storage
-msg: .string "Hello World\n"
+	.section .text             # Mark code section
+	  LI a1, msg               # Load immediate. Julia expands to 
+	                           # multiple instructions as needed.
+	  CALL puts                # Call puts function to show string
+	loop:
+	  J loop                   # Jump to loop - Infinite loop
+	.section .data             # Mark section for R/W data storage
+	msg: .string "Hello World\n"
 """
 
-    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a10ee670-7552-4966-82a1-0df4a6f25010)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c7a89676-efad-4040-8297-1ba7fe1b2e59)
+
 
 
