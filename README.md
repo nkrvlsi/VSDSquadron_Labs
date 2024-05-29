@@ -329,7 +329,7 @@ To create code that can be loaded into any memory address (position independent 
 
 By using pseudo-instructions we greatly simplify this code:
 
-"""
+"" 
 	.section .text             # Mark code section
 	  LI a1, msg               # Load immediate. Julia expands to 
 	                           # multiple instructions as needed.
@@ -338,7 +338,7 @@ By using pseudo-instructions we greatly simplify this code:
 	  J loop                   # Jump to loop - Infinite loop
 	.section .data             # Mark section for R/W data storage
 	msg: .string "Hello World\n"
-"""
+"" 
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c7a89676-efad-4040-8297-1ba7fe1b2e59)
 
