@@ -294,9 +294,19 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - First notice that, if instruction has immediate, then it uses at most 2 registers (1 src, 1 dst).
    - Key difference: Only **imm** field is different from R-format: rs2 and funct7 replaced by 12-bit signed immediate, mm[11:0]
 
-     		- opcode (7): uniquely specifies the instruction
-     		- rs1 (5): specifies a register operand
-       		- rd (5): specifies destination register that receives result of computation
+     - opcode (7): uniquely specifies the instruction
+     - rs1 (5): specifies a register operand
+     - rd (5): specifies destination register that receives result of computation
+     - immediate (12): 12 bit number
+     		- All computations done in words, so 12-bit immediate must be extended to 32 bits
+      		- always sign-extended to 32-bits before use in an arithmetic operation
+     - Can represent 2<sup>12</sup> different immediates i.e., imm[11:0] can hold values in range [-2<sup>11</sup> , +2<sup>11</sup>)
+     - example: RISCV Instruction: **addi x15,x1,-50**
+       
+	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/ebebf09a-3f65-4e84-b630-6417fd436284)
+	
+ 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/9c12dca3-0a11-4269-8646-83a8a1a2ebee)
+
 
 3. **S-format** (store)
 
