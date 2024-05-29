@@ -376,7 +376,15 @@ RISC-V stands for **Reduced Instruction set Computer**.
        
       	- addi 12-bit immediate is always sign-extended!
       	- if top bit of the 12-bit immediate is a 1, it will subtract -1 from upper 20 bits
-	
+
+	 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e841facc-a6cd-4c2c-96b3-ba0548bffe74)
+
+    -  AUIPC: Adds upper immediate value to PC
+    	-  Adds upper immediate value to PC and places result in destination register
+    	-  Used for PC-relative addressing
+    		-  `Label: auipc x10, 0`
+    			-  Puts address of label into x10
+    -  
 6. **SB-format** (Branch)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
