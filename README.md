@@ -515,7 +515,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
     	[RISC-V-cheatsheet-RV32I-4-3.pdf](https://github.com/nkrvlsi/VSDSquadron_Labs/files/15483063/RISC-V-cheatsheet-RV32I-4-3.pdf)
 
 Another useful thing to point out about this sheet is the pseudo instructions. They are not real instructions supported by RISC-V processors. Instead, they are just convenient ways of writing other instructions. For instance, if I want to move the value of one register say x3 to x4 then it would be nice if RISC-V had a move instruction. MV x4, x3 would accomplish this, except it doesn’t really exist. Why? Because the same can be accomplished with:  
-	- **ADDI x4, x3, 0  # x4 ← x3 + 0**
+		- **ADDI x4, x3, 0  # x4 ← x3 + 0**  
  
 That means you can avoid adding encoding for an MV instruction to the instruction-set architecture (ISA).
 
