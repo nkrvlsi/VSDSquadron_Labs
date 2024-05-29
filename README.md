@@ -371,6 +371,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
     	- How to set 0xDEADBEEF?
 
        		lui x10, 0xDEADB # x10 = 0xDEADB000
+
        		addi x10, x10,0xEEF # x10 = 0xDEAD**A**EEF
        
       	- addi 12-bit immediate is always sign-extended!
