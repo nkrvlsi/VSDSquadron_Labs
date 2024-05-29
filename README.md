@@ -293,7 +293,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - A word refers to a 32-bit value, so LW (Load Word) could be used to load a regular 32-bit integer. While working with strings you may want to load individual bytes by using LB.
    - First notice that, if instruction has immediate, then it uses at most 2 registers (1 src, 1 dst).
    - Key difference: Only **imm** field is different from R-format: rs2 and funct7 replaced by 12-bit signed immediate, mm[11:0]
-   		- opcode (7): uniquely specifies the instruction
+
+     		- opcode (7): uniquely specifies the instruction
      		- rs1 (5): specifies a register operand
        		- rd (5): specifies destination register that receives result of computation
 
