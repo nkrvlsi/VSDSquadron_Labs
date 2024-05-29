@@ -281,12 +281,27 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 
 2. **I-format** (immediate, loads)
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e29b28fe-ec73-432f-9f5a-d79246c0272c)
+
+   In a RISC processor, access to memory is only done through special load and store instructions.
+   These instructions come in a number of variants to be able to load values of different bit-size.
+   The LD (Load Doubleword) is only supported on RV64I as it loads a 64-bit value.
+   A word refers to a 32-bit value, so LW (Load Word) could be used to load a regular 32-bit integer. While working with strings you may want to load individual bytes by using LB.
+
 3. **S-format** (store)
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/379041a4-e802-4c65-9a8b-7e23e62c151c)
+
 4. **U-format** (Upper immediate)
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/d55d7d53-13da-48e8-861d-09eb6c919067)
+
 5. **SB-format** (Branch)
 6. **UJ-format** (jump)
 
 
-  ## RISC-V ISA
+  ## RISC-V ISA cheatsheet
   - 47 base instructions modular ISA
-     
+     [RISC-V-cheatsheet-RV32I-4-3.pdf](https://github.com/nkrvlsi/VSDSquadron_Labs/files/15483063/RISC-V-cheatsheet-RV32I-4-3.pdf)
+
