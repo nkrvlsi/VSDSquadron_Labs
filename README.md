@@ -320,10 +320,10 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		– This is very similar to the add-immediate operation but **used to create address, not to create final result**
 	- Value loaded from memory is stored in rd
  	- Example:  **lw x14, 8(x2)**
-   	  
-	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5b2e27b8-0714-408b-b610-1750b8627624)
 
-	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/fcddbb52-5f5b-4362-aefb-16c89079c33e)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5b2e27b8-0714-408b-b610-1750b8627624)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/fcddbb52-5f5b-4362-aefb-16c89079c33e)
 
 
 ### 3. <ins>S-format</ins> (store)
