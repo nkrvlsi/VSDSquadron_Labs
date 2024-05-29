@@ -186,8 +186,89 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - rs1 (5): 1st operand (“source register 1”)
    - rs2 (5): 2nd operand (second source register)
    - rd (5): “destination register” — receives the result of computation
-   - lets take an instruction **add x5,x6,x7** - as simple as **add rd,r1,r2**
+   - lets take an instruction example **add x5,x6,x7** - as simple as **add rd,r1,r2**. Instruction Code: 0x0073_02B3
      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a8f2f8ae-4ae7-4d2d-8d92-0f4524bf0ae5)
+
+   examples:-
+	1. ADD r6, r2, r1
+	
+		- Opcode: 0110011
+		- Funct3: 000
+		- Funct7: 0000000
+		- rd: 00110 // represent as 5'b6
+		- rs1: 00001 // represent as 5'b1
+		- rs2: 00010 // represent as 5'b2
+		- Instruction Code: 0000000 00010 00001 000 00110 0110011
+		
+	2. SUB r7, r1, r2
+	
+		- Opcode: 0110011
+		- Funct3: 000
+		- Funct7: 0100000
+		- rd: 00111
+		- rs1: 00001
+		- rs2: 00010
+		- Instruction Code: 0100000 00010 00001 000 00111 0110011
+	
+	3. AND r8, r1, r3
+	
+		- Opcode: 0110011
+		- Funct3: 111
+		- Funct7: 0000000
+		- rd: 01000
+		- rs1: 00001
+		- rs2: 00011
+		- Instruction Code: 0000000 00011 00001 111 01000 0110011
+	
+	4. OR r9, r2, r5
+	
+		- Opcode: 0110011
+		- Funct3: 110
+		- Funct7: 0000000
+		- rd: 01001
+		- rs1: 00010
+		- rs2: 00101
+		- Instruction Code: 0000000 00101 00010 110 01001 0110011
+	
+	5. XOR r10, r1, r4
+	
+		- Opcode: 0110011
+		- Funct3: 100
+		- Funct7: 0000000
+		- rd: 01010
+		- rs1: 00001
+		- rs2: 00100
+		- Instruction Code: 0000000 00100 00001 100 01010 0110011
+	
+	6. SLT r11, r2, r4
+	
+		- Opcode: 0110011
+		- Funct3: 010
+		- Funct7: 0000000
+		- rd: 01011
+		- rs1: 00010
+		- rs2: 00100
+		- Instruction Code: 0000000 00100 00010 010 01011 0110011
+	
+	7. SRL r16, r14, r2
+	
+		- Opcode: 0110011
+		- Funct3: 101
+		- Funct7: 0000000
+		- rd: 10000
+		- rs1: 01110
+		- rs2: 00010
+		- Instruction Code: `0000000 00010 01110 101 10000 0110011
+	
+	8. SLL r15, r1, r2
+	
+		- Opcode: 0110011
+		- Funct3: 001
+		- Funct7: 0000000
+		- rd: 01111
+		- rs1: 00001
+		- rs2: 00010
+		- Instruction Code: 0000000 00010 00001 001 01111 0110011
 
 3. I-format (immediate, loads)
 4. S-format (store)
