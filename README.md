@@ -298,10 +298,48 @@ RISC-V stands for **Reduced Instruction set Computer**.
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/d55d7d53-13da-48e8-861d-09eb6c919067)
 
 5. **SB-format** (Branch)
-6. **UJ-format** (jump)
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
+
+7. **UJ-format** (jump)
 
 
   ## RISC-V ISA cheatsheet
   - 47 base instructions modular ISA
      [RISC-V-cheatsheet-RV32I-4-3.pdf](https://github.com/nkrvlsi/VSDSquadron_Labs/files/15483063/RISC-V-cheatsheet-RV32I-4-3.pdf)
+
+Another useful thing to point out about this sheet is the pseudo instructions. They are not real instructions supported by RISC-V processors. Instead, they are just convenient ways of writing other instructions. For instance, if I want to move the value of one register say x3 to x4 then it would be nice if RISC-V had a move instruction. MV x4, x3 would accomplish this, except it doesn’t really exist. Why? Because the same can be accomplished with:
+
+	**ADDI x4, x3, 0  # x4 ← x3 + 0**
+ 
+That means you can avoid adding encoding for an MV instruction to the instruction-set architecture (ISA).
+
+One great example of the benefits of pseudo instructions is the LI and LA instructions. Because all RISC-V instructions must be 32-bit wide, they cannot contain a full 32-bit address. Thus loading a 32-bit address into a register has to be done as a two-step process. First, we load the top 20 bits with either LUI or AUIP and then we add the remaining 12 bits with ADDI.
+"""
+.section .text             # Mark code section
+  LUI  a1,     %hi(msg)    # Load upper 20 bits of msg address
+  ADDI a1, a1, %lo(msg)    # Load lower 12 bits of msg address
+  CALL puts                # Call puts function to show string
+loop:
+  J loop                   # Jump to loop - Infinite loop
+.section .data             # Mark section for R/W data storage
+  msg: .string "Hello World\n"
+"""
+To create code that can be loaded into any memory address (position independent code) we use the LA instruction which translated into AUIP and ADDI.
+
+By using pseudo-instructions we greatly simplify this code:
+
+"""
+.section .text             # Mark code section
+  LI a1, msg               # Load immediate. Julia expands to 
+                           # multiple instructions as needed.
+  CALL puts                # Call puts function to show string
+loop:
+  J loop                   # Jump to loop - Infinite loop
+.section .data             # Mark section for R/W data storage
+msg: .string "Hello World\n"
+"""
+
+    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a10ee670-7552-4966-82a1-0df4a6f25010)
+
 
