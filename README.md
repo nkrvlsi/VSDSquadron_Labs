@@ -1,7 +1,7 @@
 # VSDSquadron_Labs
 # *Task 1. C-lab & RISC-V lab: counting sum of numbers from 1 to n *
 ==============================
-## Objective: c-code for counting sum of numbers from 1 to n. Identify number of assembly instructions for the same code. 
+## Objective: write c-code for counting sum of numbers from 1 to n. Identify number of assembly instructions for the same code. 
 
 Note: we already installed RISC-V toolchain.
 1. write c-code file with gvim editor
