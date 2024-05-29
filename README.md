@@ -303,12 +303,13 @@ RISC-V stands for **Reduced Instruction set Computer**.
       		- always sign-extended to 32-bits before use in an arithmetic operation
      - Can represent 2<sup>12</sup> different immediates i.e., imm[11:0] can hold values in range [-2<sup>11</sup> , +2<sup>11</sup>)
      - example: RISCV Instruction: **addi x15,x1,-50**
-       
-	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/ebebf09a-3f65-4e84-b630-6417fd436284)
-	
- 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/9c12dca3-0a11-4269-8646-83a8a1a2ebee)
 
-	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f2e3efc5-d583-4991-a169-7d30239accd3)
+       ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/ebebf09a-3f65-4e84-b630-6417fd436284)
+
+       ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/9c12dca3-0a11-4269-8646-83a8a1a2ebee)
+
+       ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f2e3efc5-d583-4991-a169-7d30239accd3)
+       
 
    - **Load Instructions are also I-Type**
 
