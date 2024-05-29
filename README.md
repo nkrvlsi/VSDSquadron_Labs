@@ -407,7 +407,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - Branches typically used for loops (if-else, while, for)
    		- Loops are generally small (< 50 instructions)
    - **Recall:** Instructions stored in a localized area of memory (Code/Text)
-   	- Largest branch distance limited by size of code
+   		- Largest branch distance limited by size of code
      	- Address of current instruction stored in the program counter (PC)
          
 **<ins>PC-Relative Addressing</ins>:**
