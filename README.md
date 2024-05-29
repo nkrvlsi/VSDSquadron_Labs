@@ -476,9 +476,9 @@ RISC-V stands for **Reduced Instruction set Computer**.
 - ±2<sup>18</sup> 32-bit instructions
 - **Reminder:** “j” jump is a pseudo-instruction—the assembler will instead use jal but sets rd=x0 to discard return address.
 - Immediate encoding optimized similarly to branch instruction to reduce hardware cost
-- # j pseudo-instruction
+- **j pseudo-instruction**
 - j Label = jal x0, Label # Discard return address
-- # Call function within 2<sup>18</sup> instructions of PC
+- **Call function within 2<sup>18</sup> instructions of PC**
 - **jal ra, FuncName**
 - Why is the immediate so funky?
   	- Similar reasoning as for branch immediates
