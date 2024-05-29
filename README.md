@@ -176,9 +176,13 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 1. **R-format (Register)**	- Arithmetic and logical operations
 
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/04038e2b-6c21-4eb0-9c06-a9fbef6a0d4e)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e18a6ee2-b21c-416a-b8c7-41c4ccaf1998)
+
      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/3e6777fc-92ca-4446-8e9c-0f9e6c722caa)
 
-   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e32e4c2a-77fd-408a-9c3a-b44d52304754)
 
    - Each field is viewed as its own unsigned int
 	– 5-bit fields can represent any number 0-31, while 7-bit fields can represent any number 0-128, etc.
@@ -274,11 +278,6 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		- Instruction Code: 0000000 00010 00001 001 01111 0110011
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/df097697-02fb-438a-98a4-d14376179d4f)
-
-![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/04038e2b-6c21-4eb0-9c06-a9fbef6a0d4e)
-
-![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e18a6ee2-b21c-416a-b8c7-41c4ccaf1998)
-
 
 2. **I-format** (immediate, loads)
 
