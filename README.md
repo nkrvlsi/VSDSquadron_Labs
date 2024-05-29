@@ -412,6 +412,9 @@ RISC-V stands for **Reduced Instruction set Computer**.
          
 **<ins>PC-Relative Addressing</ins>:**
    - PC-Relative Addressing: Use the immediate field as a two’s complement offset to PC
+     	- Branches generally change the PC by a small amount
+     	- Can specify ± 2<sup>11</sup> addresses from the PC
+   - Why not use byte address offset from PC as the immediate?
 
 ### 6. <ins>UJ-format</ins> (jump)
 
