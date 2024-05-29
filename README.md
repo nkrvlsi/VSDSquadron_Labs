@@ -375,28 +375,24 @@ RISC-V stands for **Reduced Instruction set Computer**.
 - LUI to create long immediates:
   	- lui writes the upper 20 bits of the destination with the immediate value, and clears the lower 12 bits.
   	- Together with an addi to set low 12 bits, can create any 32-bit value in a register using two instructions (lui/addi).
-  	  	lui x10, 0x87654 	# x10 = 0x87654000
-  	  	addi x10, x10, 0x321 	# x10 = 0x87654321
+  	  	- lui x10, 0x87654 	# x10 = 0x87654000
+  	  	- addi x10, x10, 0x321 	# x10 = 0x87654321
 
 - **Corner Case**:
     	- How to set 0xDEADBEEF?
-
-       			lui x10, 0xDEADB 	# x10 = 0xDEADB000
-
-       			addi x10, x10,0xEEF 	# x10 = 0xDEADAEEF
+  		- lui x10, 0xDEADB 	# x10 = 0xDEADB000
+  		- addi x10, x10,0xEEF 	# x10 = 0xDEADAEEF
        
       	- addi 12-bit immediate is always sign-extended!
       	- if top bit of the 12-bit immediate is a 1, it will subtract -1 from upper 20 bits
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e841facc-a6cd-4c2c-96b3-ba0548bffe74)
 
-
 -  **AUIPC**: Add upper immediate value to PC
     	-  Adds upper immediate value to PC and places result in destination register
     	-  Used for PC-relative addressing
-
-       			Label: auipc x10, 0
-        			-puts address of label into x10
+   		Label: auipc x10, 0
+   			- puts address of label into x10
       
 ### 5. <ins>SB-format<ins> (Branch)
 
