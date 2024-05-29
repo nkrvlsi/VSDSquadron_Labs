@@ -302,6 +302,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
 
 6. **UJ-format** (jump)
+
 **Subroutine calls, jumps (UJ), and branches (SB)**
 - RISC-V's subroutine call jal (jump and link) places its return address in a register. This is faster in many computer designs, because it saves a memory access compared to systems that push a return address directly on a stack in memory. jal has a 20-bit signed (two's complement) offset. The offset is multiplied by 2, then added to the PC to generate a relative address to a 32-bit instruction. If the result is not at a 32-bit address (i.e., evenly divisible by 4), the CPU may force an exception
  - RISC-V CPUs jump to calculated addresses using a jump and link-register, jalr instruction. jalr is similar to jal, but gets its destination address by adding a 12-bit offset to a base register. (In contrast,jal adds a larger 20-bit offset to the PC.) 
