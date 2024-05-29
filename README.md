@@ -173,7 +173,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 1. R-format (Register)	- Arithmetic and logical operations
 
-   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/3e6777fc-92ca-4446-8e9c-0f9e6c722caa)
+     ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/3e6777fc-92ca-4446-8e9c-0f9e6c722caa)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e32e4c2a-77fd-408a-9c3a-b44d52304754)
 
