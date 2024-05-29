@@ -329,8 +329,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 ### 3. <ins>S-format</ins> (store)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/379041a4-e802-4c65-9a8b-7e23e62c151c)
-
-    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/15d6c10b-4a19-47ea-a2f6-feea2dd2be79)
+   
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/15d6c10b-4a19-47ea-a2f6-feea2dd2be79)
 
    - The characteristic of S-type instruction is that **there is no rd register**.
    - Store needs to read two registers, **rs1** for base memory address, and **rs2** for data to be stored, as well as need immediate offset!.
@@ -339,9 +339,10 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - RISC-V design decision is move low 5 bits of immediate to where rd field was in other instructions – keep rs1/rs2 fields in same place
    - register names more critical than immediate bits in hardware design.
    - Example: sw x14, 8(x2)
-  	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f5bc6fe0-5cdc-4606-9168-5a175f2489fb)
 
- 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e7cdddb7-2965-4a54-93c5-5c42d00692b9)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f5bc6fe0-5cdc-4606-9168-5a175f2489fb)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e7cdddb7-2965-4a54-93c5-5c42d00692b9)
 
 
 ### 4. <ins>U-format</ins> (Upper immediate)
@@ -381,7 +382,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
       	- addi 12-bit immediate is always sign-extended!
       	- if top bit of the 12-bit immediate is a 1, it will subtract -1 from upper 20 bits
 
-	 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e841facc-a6cd-4c2c-96b3-ba0548bffe74)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e841facc-a6cd-4c2c-96b3-ba0548bffe74)
 
     -  **AUIPC**: Add upper immediate value to PC
     	-  Adds upper immediate value to PC and places result in destination register
@@ -417,11 +418,11 @@ RISC-V stands for **Reduced Instruction set Computer**.
 	- RISC-V's subroutine call jal (jump and link) places its return address in a register. This is faster in many computer designs, because it saves a memory access compared to systems that push a return address directly on a stack in memory. jal has a 20-bit signed (two's complement) offset. The offset is multiplied by 2, then added to the PC to generate a relative address to a 32-bit instruction. If the result is not at a 32-bit address (i.e., evenly divisible by 4), the CPU may force an exception
 	 - RISC-V CPUs jump to calculated addresses using a jump and link-register, jalr instruction. jalr is similar to jal, but gets its destination address by adding a 12-bit offset to a base register. (In contrast,jal adds a larger 20-bit offset to the PC.) 
 
-	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c1edc5bb-06e1-440c-b9a0-6b2d5a2a1f41)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c1edc5bb-06e1-440c-b9a0-6b2d5a2a1f41)
 
   ## RISC-V ISA cheatsheet
   - 47 base instructions modular ISA
-     [RISC-V-cheatsheet-RV32I-4-3.pdf](https://github.com/nkrvlsi/VSDSquadron_Labs/files/15483063/RISC-V-cheatsheet-RV32I-4-3.pdf)
+    	[RISC-V-cheatsheet-RV32I-4-3.pdf](https://github.com/nkrvlsi/VSDSquadron_Labs/files/15483063/RISC-V-cheatsheet-RV32I-4-3.pdf)
 
 Another useful thing to point out about this sheet is the pseudo instructions. They are not real instructions supported by RISC-V processors. Instead, they are just convenient ways of writing other instructions. For instance, if I want to move the value of one register say x3 to x4 then it would be nice if RISC-V had a move instruction. MV x4, x3 would accomplish this, except it doesn’t really exist. Why? Because the same can be accomplished with:
 
