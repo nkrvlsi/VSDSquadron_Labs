@@ -391,8 +391,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
 
    - *beq, bne,bge,blt*
-   		- Need to specify an address to go to
-   		- Also take two registers to compare
+   		- Need to specify an **address** to go to
+   		- Also take **two registers** to compare
    		- Doesn’t write into a register (similar to stores)
    - How to encode label, i.e., where to branch to?
 
