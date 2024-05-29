@@ -367,18 +367,16 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/157cd689-08ac-4848-831d-f23f5f21e195)
 
-     - Has 20-bit immediate in upper 20 bits of 32-bit instruction word
-     - One destination register, rd
-     - Used for two instructions
-     		- **LUI** – Load Upper Immediate
-       		– **AUIPC** – Add Upper Immediate to PC
-     - LUI to create long immediates:
-
-		lui writes the upper 20 bits of the destination with the immediate value, and clears the lower 12 bits.
-       		Together with an addi to set low 12 bits, can create any 32-bit value in a register using two instructions (lui/addi).
-   
-   			lui x10, 0x87654 	# x10 = 0x87654000
-   			addi x10, x10, 0x321 	# x10 = 0x87654321
+- Has 20-bit immediate in upper 20 bits of 32-bit instruction word
+- One destination register, rd
+- Used for two instructions
+  	- **LUI** – Load Upper Immediate
+  	- **AUIPC** – Add Upper Immediate to PC
+- LUI to create long immediates:
+  	- lui writes the upper 20 bits of the destination with the immediate value, and clears the lower 12 bits.
+  	- Together with an addi to set low 12 bits, can create any 32-bit value in a register using two instructions (lui/addi).
+  	  	lui x10, 0x87654 	# x10 = 0x87654000
+  	  	addi x10, x10, 0x321 	# x10 = 0x87654321
 
 - **Corner Case**:
     	- How to set 0xDEADBEEF?
