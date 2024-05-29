@@ -459,7 +459,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
      
 ### 6. <ins>UJ-format</ins> (jump)
 
-**Subroutine calls, jumps (UJ), and branches (SB)**
+**Subroutine calls, jumps (UJ), and branches (SB)**  
+
 **<ins>UJ-Format Instructions</ins>:**
 - For branches, we assumed that we won’t want to branch too far, so we can specify a **change** in the PC
 - For general jumps (**jal**), we may jump to **anywhere** in code memory
