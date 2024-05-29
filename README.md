@@ -190,7 +190,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a8f2f8ae-4ae7-4d2d-8d92-0f4524bf0ae5)
 
    examples:-
-	1. ADD r6, r2, r1
+	1. ADD r6, r2, r1	addition
 	
 		- Opcode: 0110011
 		- Funct3: 000
@@ -200,7 +200,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		- rs2: 00010 // represent as 5'b2
 		- Instruction Code: 0000000 00010 00001 000 00110 0110011
 		
-	2. SUB r7, r1, r2
+	2. SUB r7, r1, r2	subtraction
 	
 		- Opcode: 0110011
 		- Funct3: 000
@@ -210,7 +210,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		- rs2: 00010
 		- Instruction Code: 0100000 00010 00001 000 00111 0110011
 	
-	3. AND r8, r1, r3
+	3. AND r8, r1, r3	AND operation between r1 & r3
 	
 		- Opcode: 0110011
 		- Funct3: 111
@@ -220,7 +220,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		- rs2: 00011
 		- Instruction Code: 0000000 00011 00001 111 01000 0110011
 	
-	4. OR r9, r2, r5
+	4. OR r9, r2, r5	OR operation between r2 and r5
 	
 		- Opcode: 0110011
 		- Funct3: 110
@@ -230,7 +230,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		- rs2: 00101
 		- Instruction Code: 0000000 00101 00010 110 01001 0110011
 	
-	5. XOR r10, r1, r4
+	5. XOR r10, r1, r4	XOR operation between r1 and r4
 	
 		- Opcode: 0110011
 		- Funct3: 100
@@ -240,7 +240,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		- rs2: 00100
 		- Instruction Code: 0000000 00100 00001 100 01010 0110011
 	
-	6. SLT r11, r2, r4
+	6. SLT r11, r2, r4	r11=1 if x is negative; r11=0 if 0 or positive
 	
 		- Opcode: 0110011
 		- Funct3: 010
@@ -271,6 +271,11 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		- Instruction Code: 0000000 00010 00001 001 01111 0110011
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/df097697-02fb-438a-98a4-d14376179d4f)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/04038e2b-6c21-4eb0-9c06-a9fbef6a0d4e)
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e18a6ee2-b21c-416a-b8c7-41c4ccaf1998)
+
 
 2. **I-format** (immediate, loads)
 3. **S-format** (store)
