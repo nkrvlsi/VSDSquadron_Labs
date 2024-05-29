@@ -197,8 +197,9 @@ RISC-V stands for **Reduced Instruction set Computer**.
      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a8f2f8ae-4ae7-4d2d-8d92-0f4524bf0ae5)
 
    examples:-
-	1. ADD r6, r2, r1	addition
-	
+
+ 	1. ADD r6, r2, r1	addition
+ 
 		- Opcode: 0110011
 		- Funct3: 000
 		- Funct7: 0000000
