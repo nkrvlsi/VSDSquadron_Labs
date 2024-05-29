@@ -460,14 +460,34 @@ RISC-V stands for **Reduced Instruction set Computer**.
 ### 6. <ins>UJ-format</ins> (jump)
 
 **Subroutine calls, jumps (UJ), and branches (SB)**
+**<ins>UJ-Format Instructions</ins>:**
 - For branches, we assumed that we won’t want to branch too far, so we can specify a **change** in the PC
 - For general jumps (**jal**), we may jump to **anywhere** in code memory
   	- Ideally, we would specify a 32-bit memory address to jump to
   	- Unfortunately, we can’t fit both a 7-bit *opcode* and a 32-bit address into a single 32-bit word
   	- Also, when linking we must write to an **rd** register
 
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a279fd9a-9b45-456d-9996-18a303f19713)
 
+- jal saves **PC+4 in** register **rd** (the return address)
+- Set PC = PC + offset (PC-relative jump)
+- Target somewhere within ±2<sup>19</sup> locations, 2 bytes apart
+- ±2<sup>18</sup> 32-bit instructions
+- **Reminder:** “j” jump is a pseudo-instruction—the assembler will instead use jal but sets rd=x0 to discard return address.
+- Immediate encoding optimized similarly to branch instruction to reduce hardware cost
+- # j pseudo-instruction
+- j Label = jal x0, Label # Discard return address
+- # Call function within 2<sup>18</sup> instructions of PC
+- **jal ra, FuncName**
+- Why is the immediate so funky?
+  	- Similar reasoning as for branch immediates
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c1edc5bb-06e1-440c-b9a0-6b2d5a2a1f41)
+
+**<ins>*jalr* Instruction (I-Format)</ins>:**
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/0d17ff61-6a8e-407f-95a0-8d9be7445433)
+
+
 
   ## RISC-V ISA cheatsheet
   - 47 base instructions modular ISA
