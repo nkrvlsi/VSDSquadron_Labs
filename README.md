@@ -549,4 +549,4 @@ By using pseudo-instructions we greatly simplify this code:
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c7a89676-efad-4040-8297-1ba7fe1b2e59)
 
 
-
+Thats concludes TASK2.
