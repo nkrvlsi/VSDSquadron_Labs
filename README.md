@@ -365,7 +365,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
    **<ins>Upper Immediate Instructions format</ins>:**    
 
-     	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/157cd689-08ac-4848-831d-f23f5f21e195)
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/157cd689-08ac-4848-831d-f23f5f21e195)
 
      - Has 20-bit immediate in upper 20 bits of 32-bit instruction word
      - One destination register, rd
