@@ -287,6 +287,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/81669faf-9209-44bd-aab6-5cb53586526e)
 
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a5afbf04-adf2-442a-b582-f929abcd8850)
+
    The upper 12 bits of I-type is an immediate number. The opcode is different from other instruction formats because the corresponding specific operations are different, and other parts are very similar to R-type
 
    - In a RISC processor, access to memory is only done through special load and store instructions.
@@ -329,7 +331,11 @@ RISC-V stands for **Reduced Instruction set Computer**.
 ### 3. <ins>S-format</ins> (store)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/379041a4-e802-4c65-9a8b-7e23e62c151c)
-   
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/45eeb516-1ec6-4caf-9b11-456f3e4718f9)
+
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f5e9f74e-60ae-4144-8842-90b484fa850c)
+
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/15d6c10b-4a19-47ea-a2f6-feea2dd2be79)
 
    - The characteristic of S-type instruction is that **there is no rd register**.
@@ -357,7 +363,9 @@ RISC-V stands for **Reduced Instruction set Computer**.
    		- the immediate of 20 bits
    		- the instruction opcode
 
-       ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b70b2ca7-8660-48b8-a028-f425ab811ad2)
+   **<ins>Upper Immediate Instructions format</ins>:**    
+
+     	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/157cd689-08ac-4848-831d-f23f5f21e195)
 
      - Has 20-bit immediate in upper 20 bits of 32-bit instruction word
      - One destination register, rd
