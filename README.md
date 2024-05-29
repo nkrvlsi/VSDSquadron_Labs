@@ -186,7 +186,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
    - rs1 (5): 1st operand (“source register 1”)
    - rs2 (5): 2nd operand (second source register)
    - rd (5): “destination register” — receives the result of computation
-   - lets take an instruction **add x5,x6,x7** - same as **add rd,r1,r2**
+   - lets take an instruction **add x5,x6,x7** - as simple as **add rd,r1,r2**
      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/a8f2f8ae-4ae7-4d2d-8d92-0f4524bf0ae5)
 
 3. I-format (immediate, loads)
