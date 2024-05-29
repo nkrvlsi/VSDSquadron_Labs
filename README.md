@@ -319,6 +319,7 @@ RISC-V stands for **Reduced Instruction set Computer**.
  	- Example:  **lw x14, 8(x2)**
    	    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5b2e27b8-0714-408b-b610-1750b8627624)
 
+	    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/fcddbb52-5f5b-4362-aefb-16c89079c33e)
 
 
 4. **S-format** (store)
