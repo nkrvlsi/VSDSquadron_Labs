@@ -270,6 +270,8 @@ RISC-V stands for **Reduced Instruction set Computer**.
 		- rs2: 00010
 		- Instruction Code: 0000000 00010 00001 001 01111 0110011
 
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/df097697-02fb-438a-98a4-d14376179d4f)
+
 3. I-format (immediate, loads)
 4. S-format (store)
 5. U-format (Upper immediate)
