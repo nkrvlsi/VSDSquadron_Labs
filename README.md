@@ -309,8 +309,19 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f2e3efc5-d583-4991-a169-7d30239accd3)
 
+   - **Load Instructions are also I-Type**
 
-3. **S-format** (store)
+     ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/ba2c187d-9542-4592-8285-82cb90d4ecbb)
+
+     	- The 12-bit signed immediate is added to the base address in register **rs1** to form the memory address
+		– This is very similar to the add-immediate operation but **used to create address, not to create final result**
+	- Value loaded from memory is stored in rd
+ 	- Example:  **lw x14, 8(x2)**
+   	    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5b2e27b8-0714-408b-b610-1750b8627624)
+
+
+
+4. **S-format** (store)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/379041a4-e802-4c65-9a8b-7e23e62c151c)
 
@@ -318,15 +329,15 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
    - The characteristic of S-type instruction is that **there is no rd register**. In this type of instruction, the **immediate is divided into two parts**, the first part is in bit11-5, and the second part is in bit4-0. The 5 bits of the immediate 4-0 occupy the position of rd in other instruction formats, and 5-11occupy the position of funct7. Explain that the command format does not need to write back. That is, read the two values from the two registers and perform the operation together with theimmediate, and write the result to the register after the operation is over.
 
-4. **U-format** (Upper immediate)
+5. **U-format** (Upper immediate)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/d55d7d53-13da-48e8-861d-09eb6c919067)
 
-5. **SB-format** (Branch)
+6. **SB-format** (Branch)
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7f3718f4-fff8-40b4-9bfe-e9f8234ec1d4)
 
-6. **UJ-format** (jump)
+7. **UJ-format** (jump)
 
 	**Subroutine calls, jumps (UJ), and branches (SB)**
 	- RISC-V's subroutine call jal (jump and link) places its return address in a register. This is faster in many computer designs, because it saves a memory access compared to systems that push a return address directly on a stack in memory. jal has a 20-bit signed (two's complement) offset. The offset is multiplied by 2, then added to the PC to generate a relative address to a 32-bit instruction. If the result is not at a 32-bit address (i.e., evenly divisible by 4), the CPU may force an exception
