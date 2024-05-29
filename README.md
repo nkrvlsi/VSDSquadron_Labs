@@ -344,13 +344,27 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/d55d7d53-13da-48e8-861d-09eb6c919067)
 
-   - How do we deal with 32-bit immediates?
+   - **How do we deal with 32-bit immediates?**
    		- Our I-type instructions only give us 12 bits
-   - Solution: Need a new instruction format for dealing with the rest of the 20 bits.
+   - **Solution:** Need a new instruction format for dealing with the rest of the 20 bits.
    - This instruction should deal with:
    		- a destination register to put the 20 bits into
    		- the immediate of 20 bits
    		- the instruction opcode
+
+       ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b70b2ca7-8660-48b8-a028-f425ab811ad2)
+
+     - Has 20-bit immediate in upper 20 bits of 32-bit instruction word
+     - One destination register, rd
+     - Used for two instructions
+     		- LUI – Load Upper Immediate
+       		– AUIPC – Add Upper Immediate to PC
+     - LUI to create long immediates:
+     		- lui writes the upper 20 bits of the destination with the immediate value, and clears the lower 12 bits
+       		- Together with an addi to set low 12 bits, can create any 32-bit value in a register using two instructions (lui/addi).
+     		**lui x10, 0x87654** 	**# x10 = 0x87654000**
+		**addi x10, x10, 0x321** 	**# x10 = 0x87654321**
+     - 
 
 6. **SB-format** (Branch)
 
