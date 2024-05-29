@@ -328,7 +328,17 @@ RISC-V stands for **Reduced Instruction set Computer**.
 
     ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/15d6c10b-4a19-47ea-a2f6-feea2dd2be79)
 
-   - The characteristic of S-type instruction is that **there is no rd register**. In this type of instruction, the **immediate is divided into two parts**, the first part is in bit11-5, and the second part is in bit4-0. The 5 bits of the immediate 4-0 occupy the position of rd in other instruction formats, and 5-11occupy the position of funct7. Explain that the command format does not need to write back. That is, read the two values from the two registers and perform the operation together with theimmediate, and write the result to the register after the operation is over.
+   - The characteristic of S-type instruction is that **there is no rd register**.
+   - Store needs to read two registers, **rs1** for base memory address, and **rs2** for data to be stored, as well as need immediate offset!.
+   - Can’t have both rs2 and immediate in same place as other instructions!
+   - Note: stores don’t write a value to the register file, no rd!
+   - RISC-V design decision is move low 5 bits of immediate to where rd field was in other instructions – keep rs1/rs2 fields in same place
+   - register names more critical than immediate bits in hardware design.
+   - Example: sw x14, 8(x2)
+  	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/f5bc6fe0-5cdc-4606-9168-5a175f2489fb)
+
+ 	![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/e7cdddb7-2965-4a54-93c5-5c42d00692b9)
+
 
 5. **U-format** (Upper immediate)
 
