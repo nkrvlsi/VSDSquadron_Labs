@@ -502,7 +502,13 @@ RISC-V stands for **Reduced Instruction set Computer**.
 - Call function at any 32-bit absolute address  
   	lui x1, <hi 20 bits>  
   	jalr ra, x1, <lo 12 bits>  
-- Jump PC-relative with 32-bit offset
+- Jump PC-relative with 32-bit offset  
+  	auipc x1, <hi 20 bits>
+  	jalr x0, x1, <lo 12 bits>
+
+**Question: When combining two C files into one executable, we can compile them independently and then merge them together.**
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/9f7dc1a5-09fa-45e1-b1c4-99365bfda2f0)
+  
 
   ## RISC-V ISA cheatsheet
   - 47 base instructions modular ISA
