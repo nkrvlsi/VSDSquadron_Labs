@@ -76,6 +76,38 @@ Instructions we use here are classified in 5 types.
 steps3,4,5,6,7 explaind in below image.
 <img width="805" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/cdeac2c5-11b2-487b-b2d6-6bb7b4a2c6e7">
 
-   8. 
+**<slt>R-Type:</slt>**  
+
+   1. ADD:EX_MEM_ALUOUT <= ID_EX_A + ID_EX_B;  
+   <img width="375" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/12ce1bad-9487-459c-b5de-5bdbcd9ff147">
+   - ALU output is generated in the next posedge of clk
+
+   2. SUB:EX_MEM_ALUOUT <= ID_EX_A - ID_EX_B;  
+   <img width="317" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7190dcec-0bb8-47ba-9293-476666723529">
+
+   3. AND:EX_MEM_ALUOUT <= ID_EX_A & ID_EX_B;  
+   <img width="350" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c4e37e3b-3a25-454b-b455-c207b41afbd9">
+
+   4. OR :EX_MEM_ALUOUT <= ID_EX_A | ID_EX_B;  
+   <img width="369" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/55f23a71-ddc0-4e52-b4ea-97928446826a">
+
+   5. XOR:EX_MEM_ALUOUT <= ID_EX_A ^ ID_EX_B;  
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/cf7e0ffd-3be9-4e3b-9ff3-9abc0848a365)
+
+   6. SLT:EX_MEM_ALUOUT <= (ID_EX_A < ID_EX_B) ? 32'd1 : 32'd0;  
+      - not executed
+
+   ADDI:EX_MEM_ALUOUT <= ID_EX_A + ID_EX_IMMEDIATE;  
+   
+   SUBI:EX_MEM_ALUOUT <= ID_EX_A - ID_EX_IMMEDIATE;
+   
+   ANDI:EX_MEM_ALUOUT <= ID_EX_A & ID_EX_B;
+   
+   ORI:EX_MEM_ALUOUT  <= ID_EX_A | ID_EX_B;
+   
+   XORI:EX_MEM_ALUOUT <= ID_EX_A ^ ID_EX_B;  
+
+   
+   9.  
        
 
