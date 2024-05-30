@@ -22,5 +22,8 @@ Instructions we use here are classified in 5 types.
   
 <img width="412" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/857af80f-7751-48ef-a793-61651805cd85">
 
-
+## 4. Functional simulation using verilog files
+### tools we used here:  
+   - 1. Verilog compiler   - Icarus Verilog -> open source tool  
+   - 2. waveform viewer    - GTKWave Analyzer V3.3.86   
 
