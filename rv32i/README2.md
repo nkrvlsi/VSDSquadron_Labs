@@ -33,11 +33,11 @@ Instructions we use here are classified in 5 types.
       - cmd: **sudo apt-get update**
       - cmd: **sudo apt-get install iverilog gtkwave**
 2. Clone github repository
-      - cmd: git clone https://github.com/vinayrayapati/rv32i
-      - cmd: cd rv32i
+      - cmd: **git clone https://github.com/vinayrayapati/rv32i**
+      - cmd: **cd rv32i**
 ### 3. Simulation
 1. for compilation and simulation use below command
-      - cmd: iverilog iiitb_rv32i.v iiitb_rv32i_tb.v -o output_file
+      - cmd: **iverilog iiitb_rv32i.v iiitb_rv32i_tb.v -o output_file**
            - it will create iiitb_rv32i.vcd dump file that can be used to check waveform
            - here -o is to tell output file (for now im not seeing any use case with this file)
 ### 4. output checking using GTKWave
