@@ -54,11 +54,13 @@ Instructions we use here are classified in 5 types.
 3. Check waveform:
    1. Check clk running and reset release
       
-      <img width="335" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b101b49a-a54a-48c6-ac6c-127a3f56156d">
+      <img width="446" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/60d0613a-707e-4326-bfbe-dbc170b7b99c">
+
 
    2. instruction types (arithmetic_type=7'd0, memory_type=7'd1, branch_type=7'd2 & shift_type=7'd3) will be checked using ID_EX_IR[6:0] as below
       
-     <img width="353" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c7f0a0a9-7e8e-46ed-9d47-c4cf43a020ef">
+     ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7476e52e-d334-4194-ac54-e9fdbf9368a6)
+
      
      - here we can see clearly shift type (value should be 3) we are not excercized but rest all we excercized.
  
