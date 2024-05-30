@@ -76,7 +76,7 @@ Instructions we use here are classified in 5 types.
 steps3,4,5,6,7 explaind in below image.
 <img width="805" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/cdeac2c5-11b2-487b-b2d6-6bb7b4a2c6e7">
 
-**<slt>R-Type:</slt>**  
+**<ins>R-Type:</ins>**  
 
    1. ADD:EX_MEM_ALUOUT <= ID_EX_A + ID_EX_B;  
    <img width="375" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/12ce1bad-9487-459c-b5de-5bdbcd9ff147">
@@ -96,17 +96,20 @@ steps3,4,5,6,7 explaind in below image.
 
    6. SLT:EX_MEM_ALUOUT <= (ID_EX_A < ID_EX_B) ? 32'd1 : 32'd0;  
       - not executed
+        
+**<ins>I-type:</ins>**
 
-   ADDI:EX_MEM_ALUOUT <= ID_EX_A + ID_EX_IMMEDIATE;  
-   
-   SUBI:EX_MEM_ALUOUT <= ID_EX_A - ID_EX_IMMEDIATE;
-   
-   ANDI:EX_MEM_ALUOUT <= ID_EX_A & ID_EX_B;
-   
-   ORI:EX_MEM_ALUOUT  <= ID_EX_A | ID_EX_B;
-   
-   XORI:EX_MEM_ALUOUT <= ID_EX_A ^ ID_EX_B;  
+   1. ADDI:EX_MEM_ALUOUT <= ID_EX_A + ID_EX_IMMEDIATE;  
+   ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c72daea8-cb6c-42c8-871e-0e8e3762e1c1)
 
+   2. SUBI:EX_MEM_ALUOUT <= ID_EX_A - ID_EX_IMMEDIATE;
+      - not executed
+   3. ANDI:EX_MEM_ALUOUT <= ID_EX_A & ID_EX_B;
+      - not executed
+   4. ORI:EX_MEM_ALUOUT  <= ID_EX_A | ID_EX_B;
+      - not executed
+   5. XORI:EX_MEM_ALUOUT <= ID_EX_A ^ ID_EX_B;  
+      - not executed
    
    9.  
        
