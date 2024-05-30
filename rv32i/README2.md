@@ -49,7 +49,7 @@ Instructions we use here are classified in 5 types.
      2. Intrction **Decode** (ID)     - Read program registers & identify type of operation.
      3. **execute**                   - Compute value or address. performs type of opertation on data.
      4. **Memory** access (Mem Rd/Wr) - Read or write back data. Load(I) & Store(S) instructions transfer value between register <----> memory
-     5. **Write Back** (WB)           - program registers
+     5. **Write Back** (WB)           - program registers. Result of the instruction will be written back to the register file.
 
 3. Check each instruction in waveform like below:
    
