@@ -14,4 +14,7 @@ This project is to undertand few instructions in single cycle using RISC-V ISA. 
 
 ## 2. BLOCK DIAGRAM OF RISC-V RV32I
 
+<img width="527" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/4963f044-89eb-426d-a05d-dd212cb7ed00">
+
+
 
