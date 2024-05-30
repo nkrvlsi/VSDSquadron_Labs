@@ -95,7 +95,7 @@ steps3,4,5,6,7 explaind in below image.
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/cf7e0ffd-3be9-4e3b-9ff3-9abc0848a365)
 
    7. SLT:EX_MEM_ALUOUT <= (ID_EX_A < ID_EX_B) ? 32'd1 : 32'd0;  
-      - not executed
+      - not excercized
         
 **<ins>I-type:</ins>**
 
@@ -103,14 +103,38 @@ steps3,4,5,6,7 explaind in below image.
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c72daea8-cb6c-42c8-871e-0e8e3762e1c1)
 
    2. SUBI:EX_MEM_ALUOUT <= ID_EX_A - ID_EX_IMMEDIATE;
-      - not executed
+      - not excercized
    3. ANDI:EX_MEM_ALUOUT <= ID_EX_A & ID_EX_B;
-      - not executed
+      - not excercized
    4. ORI:EX_MEM_ALUOUT  <= ID_EX_A | ID_EX_B;
-      - not executed
+      - not excercized
    5. XORI:EX_MEM_ALUOUT <= ID_EX_A ^ ID_EX_B;  
-      - not executed
-   
-   9.  
+      - not excercized
+        
+**<ins>M-type:</ins>**
+
+   1. LW  :EX_MEM_ALUOUT <= ID_EX_A + ID_EX_IMMEDIATE;
+      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/b0486ded-6ffb-46c2-ae61-a9599af11230)
+
+   2. SW  :EX_MEM_ALUOUT <= ID_EX_IR[24:20] + ID_EX_IR[19:15];
+      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/12d43a99-05e8-4ca6-ac8a-93f3d5c4f2cd)
+
+**<ins>BR-type:</ins>**
+      
+   1. BEQ: EX_MEM_ALUOUT <= ID_EX_NPC+ID_EX_IMMEDIATE;
+           BR_EN <= 1'd1 ? (ID_EX_IR[19:15] == ID_EX_IR[11:7]) : 1'd0;
+      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/1da029c1-0e55-4538-ad96-db56e48931f4)
+
+   2. BNE: EX_MEM_ALUOUT <= ID_EX_NPC+ID_EX_IMMEDIATE;
+           BR_EN <= (ID_EX_IR[19:15] != ID_EX_IR[11:7]) ? 1'd1 : 1'd0;
+      - not excercized
+        
+**<ins>SH-type:</ins>**
+
+   1. SLL:EX_MEM_ALUOUT <= ID_EX_A << ID_EX_B;
+      - not excercized
+   2. SRL:EX_MEM_ALUOUT <= ID_EX_A >> ID_EX_B;
+      - not excercized
+   3. 
        
 
