@@ -4,13 +4,13 @@ This project is to undertand few instructions in single cycle using RISC-V ISA. 
 1. <slt>Arithmetic type</slt>  
    - i) **ADD**-addition, 2) **SUB**-subtraction, 3) **AND**-logical and, 4) **OR** -logical or, 5) **XOR** - logical xor 6) **SLT** - set less than  
 2. <slt>Immediate Type</slt>
-   - 1) **ADDI**-add immediate, 2) **SUBI**-subtract immediate , 3) **ANDI**-local and immediate, 4) **ORI**-logical or immediate 5) **XORI**-logical xor immediate         
+   - i) **ADDI**-add immediate, 2) **SUBI**-subtract immediate , 3) **ANDI**-local and immediate, 4) **ORI**-logical or immediate 5) **XORI**-logical xor immediate         
 3. <slt>Memory type</slt>
-   - 1) **LW**-load word  2) **SW**-store word  
+   - i) **LW**-load word  2) **SW**-store word  
 4. <slt>Branch Type</slt>  
-   - 1) **BEQ**-Branch if quals to 2) **BNE**-Brnach if not equals to  
+   - i) **BEQ**-Branch if quals to 2) **BNE**-Brnach if not equals to  
 6. <slt>Shift type</slt>  
-   - 1) **SLL**-Shift left logic 2) **SRL**-Shift right logic
+   - i) **SLL**-Shift left logic 2) **SRL**-Shift right logic
 
 ## 2. BLOCK DIAGRAM OF RISC-V RV32I
 
