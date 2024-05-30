@@ -43,8 +43,8 @@ This project provides an insight into the working of a few important instruction
 
  Open your terminal and type the following to install iverilog and GTKWave
  ```
- $   sudo apt get update
- $   sudo apt get install iverilog gtkwave
+ $   sudo apt-get update
+ $   sudo apt-get install iverilog gtkwave
  ```
 
 - **To clone the repository and download the netlist files for simulation , enter the following commands in your terminal.**
