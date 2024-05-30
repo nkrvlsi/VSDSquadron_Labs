@@ -59,6 +59,7 @@ Instructions we use here are classified in 5 types.
    2. instruction types (arithmetic_type=7'd0, memory_type=7'd1, branch_type=7'd2 & shift_type=7'd3) will be checked using ID_EX_IR[6:0] as below
       
      <img width="353" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/c7f0a0a9-7e8e-46ed-9d47-c4cf43a020ef">
+     
      - here we can see clearly shift type (value should be 3) we are not excercized but rest all we excercized.
  
    3. 
