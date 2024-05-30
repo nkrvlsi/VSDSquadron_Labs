@@ -36,7 +36,7 @@ Instructions we use here are classified in 5 types.
         - cmd: git clone https://github.com/vinayrayapati/rv32i
         - cmd: cd rv32i
 ### 3. Simulation
-   - compilation and simulation use below command
+1. for compilation and simulation use below command  
         - cmd: iverilog iiitb_rv32i.v iiitb_rv32i_tb.v -o output_file
              - it will create iiitb_rv32i.vcd dump file that can be used to check waveform
              - here -o is to tell output file (for now im not seeing any use case with this file)
@@ -45,11 +45,11 @@ Instructions we use here are classified in 5 types.
         - cmd: **gtkwave iiitb_rv32i.vcd &**  
 
 2. Instructions performed in a 5-stage pipeline ISA.  
-     1. Instruction Fetch      - Read instruction from instruction memory
-     2. Intrction Decode       - Read program registers
-     3. execute                - Compute value or address.
-     4. Memory access (Rd/Wr)  - Read or write back data
-     5. Write Back             - program registers
+     1. Instruction **Fetch** (IF)    - Read instruction from instruction memory.
+     2. Intrction **Decode** (ID)     - Read program registers & identify type of operation.
+     3. **execute**                   - Compute value or address. performs type of opertation on data.
+     4. **Memory** access (Mem Rd/Wr) - Read or write back data. Load(I) & Store(S) instructions transfer value between register <----> memory
+     5. **Write Back** (WB)           - program registers
 
 3. Check each instruction in waveform like below:
    
