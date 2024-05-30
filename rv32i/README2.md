@@ -61,8 +61,21 @@ Instructions we use here are classified in 5 types.
       
      ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/7476e52e-d334-4194-ac54-e9fdbf9368a6)
 
-     
      - here we can see clearly shift type (value should be 3) we are not excercized but rest all we excercized.
  
-   3. 
+   3. check if condition ID_EX_IR[6:0]=0 (tells AR_Type) and ID_EX_IR[31:25]== 7'd1 (tells arithmetic and logical operation type).
+         - ID_EX_IR[14:12] tells type of operation to perform: ADD=3'd0, SUB=3'd1, AND=3'd2, OR=3'd3, XOR=3'd4, SLT=3'd5
+   4. check if condition ID_EX_IR[6:0]=0 (tells R_Type) and ID_EX_IR[31:25]== 7'd0 (tells I_type).
+         - ID_EX_IR[14:12] tells type of operation to perform:   ADDI=3'd0, SUBI=3'd1, ANDI=3'd2, ORI=3'd3, XORI=3'd4
+   5. check if condition ID_EX_IR[6:0]=1 (tells M_Type)
+         - ID_EX_IR[14:12] tells type of operation to perform: LW=3'd0, SW=3'd1
+   6. check if condition ID_EX_IR[6:0]=2 (tells BR_Type)
+         - ID_EX_IR[14:12] tells type of operation to perform: BEQ=3'd0, BNE=3'd1
+   7. check if condition ID_EX_IR[6:0]=3 (tells SH_Type)
+          - ID_EX_IR[14:12] tells type of operation to perform: SLL=3'd0, SRL=3'd1
+steps3,4,5,6,7 explaind in below image.
+<img width="805" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/cdeac2c5-11b2-487b-b2d6-6bb7b4a2c6e7">
+
+   8. 
+       
 
