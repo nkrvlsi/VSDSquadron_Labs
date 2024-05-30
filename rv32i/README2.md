@@ -23,7 +23,34 @@ Instructions we use here are classified in 5 types.
 <img width="412" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/857af80f-7751-48ef-a793-61651805cd85">
 
 ## 4. Functional simulation using verilog files
-### tools we used here:  
+### 1. Tools used:  iverilog and GTKwave
    - 1. Verilog compiler   - **Icarus Verilog**             -> open source
-   - 2. waveform viewer    - **GTKWave Analyzer V3.3.86**   -> open source 
+   - 2. waveform viewer    - **GTKWave Analyzer V3.3.86**   -> open source
+    
+### 2. setup
+   - Ubuntu - Installing iverilog and gtkwave
+        - open terminal and type following command
+        - cmd: **sudo apt-get update**
+        - cmd: **sudo apt-get install iverilog gtkwave**
+   - Clone github repository
+        - cmd: git clone https://github.com/vinayrayapati/rv32i
+        - cmd: cd rv32i
+### 3. Simulation
+   - compilation and simulation use below command
+        - cmd: iverilog iiitb_rv32i.v iiitb_rv32i_tb.v -o output_file
+             - it will create iiitb_rv32i.vcd dump file that can be used to check waveform
+             - here -o is to tell output file (for now im not seeing any use case with this file)
+### 4. output checking using GTKWave
+1. Open gtkwave and load vcd file  
+        - cmd: **gtkwave iiitb_rv32i.vcd &**  
+
+2. Instructions performed in a 5-stage pipeline ISA.  
+     1. Instruction Fetch      - Read instruction from instruction memory
+     2. Intrction Decode       - Read program registers
+     3. execute                - Compute value or address.
+     4. Memory access (Rd/Wr)  - Read or write back data
+     5. Write Back             - program registers
+
+3. Check each instruction in waveform like below:
+   
 
