@@ -91,10 +91,10 @@ steps3,4,5,6,7 explaind in below image.
    4. OR :EX_MEM_ALUOUT <= ID_EX_A | ID_EX_B;  
    <img width="369" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/55f23a71-ddc0-4e52-b4ea-97928446826a">
 
-   5. XOR:EX_MEM_ALUOUT <= ID_EX_A ^ ID_EX_B;  
+   5. XOR:EX_MEM_ALUOUT <= ID_EX_A ^ ID_EX_B;
    ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/cf7e0ffd-3be9-4e3b-9ff3-9abc0848a365)
 
-   6. SLT:EX_MEM_ALUOUT <= (ID_EX_A < ID_EX_B) ? 32'd1 : 32'd0;  
+   7. SLT:EX_MEM_ALUOUT <= (ID_EX_A < ID_EX_B) ? 32'd1 : 32'd0;  
       - not executed
         
 **<ins>I-type:</ins>**
