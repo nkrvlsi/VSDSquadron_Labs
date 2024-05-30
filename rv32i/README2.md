@@ -24,6 +24,6 @@ Instructions we use here are classified in 5 types.
 
 ## 4. Functional simulation using verilog files
 ### tools we used here:  
-   - 1. Verilog compiler   - Icarus Verilog -> open source tool  
-   - 2. waveform viewer    - GTKWave Analyzer V3.3.86   
+   - 1. Verilog compiler   - **Icarus Verilog**             -> open source
+   - 2. waveform viewer    - **GTKWave Analyzer V3.3.86**   -> open source 
 
