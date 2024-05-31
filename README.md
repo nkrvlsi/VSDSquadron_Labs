@@ -689,7 +689,30 @@ steps3,4,5,6,7 explaind in below image.
       - not excercized
    2. SRL:EX_MEM_ALUOUT <= ID_EX_A >> ID_EX_B;
       - not excercized
-   3. 
-       
+
+**<ins>Conclusion:</ins>** Look into below diagram:
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/826de386-563b-4720-9385-5837ea3ee481)
+
+   - above diagram we can clearly see that PC is incremented by 1 each clock
+   - we know from block diagram we had 3 types of memory here, 1. register 2. IMEM - instruction Memory 3. DMEM - Data Memory
+   - **Instrcion code** is preloaded into  IMEM as below  
+     <img width="230" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/03e2be7f-57e8-4123-9532-6b7f607cbbed">
+     
+   - **Decode Stage** we are reading register data and writing into r1,r2 register.
+        - loading A,B, RD, IR, Immediate, PC etc from register memory.  
+     <img width="260" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5f4ab972-74e9-4b12-a9fb-3f87af3ac665">
+
+   - **Execution stage** we are performing certain operation between registers like add, sub, sll etc and final output of the operand is written to  EX_MEM_ALUOUT[31:0].
+   - **Memory stage** from RTL side: computed EX_MEM_ALUOUT is written to MEM_WB_ALUOUT.
+        - Incase of Mem type:
+             - load **LW:MEM_WB_LDM <= DM[EX_MEM_ALUOUT];**
+             - Store **SW:DM[EX_MEM_ALUOUT]<=REG[EX_MEM_IR[11:7]];**
+   -  Finally **Write back** stage -> ALU output is written to a register. i.e., ex: REG[MEM_WB_IR[11:7]] <= MEM_WB_ALUOUT.
+
+all signlas snapshot:
+<img width="808" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/bd84c5df-83c6-409b-a8a5-5f897209c392">
+
+
 
 
