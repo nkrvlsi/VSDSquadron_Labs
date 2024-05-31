@@ -577,11 +577,11 @@ Instructions we use here are classified in 5 types.
 <img width="412" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/857af80f-7751-48ef-a793-61651805cd85">
 
 ## 4. Functional simulation using verilog files
-### 1. Tools used:  iverilog and GTKwave
+### 4.1. Tools used:  iverilog and GTKwave
 1. Verilog compiler   - **Icarus Verilog**             -> open source
 2. waveform viewer    - **GTKWave Analyzer V3.3.86**   -> open source
     
-### 2. setup
+### 4.2. setup
 1. Installing iverilog and gtkwave - Ubuntu
       - open terminal and type following command
       - cmd: **sudo apt-get update**
@@ -589,12 +589,12 @@ Instructions we use here are classified in 5 types.
 2. Clone github repository
       - cmd: **git clone https://github.com/vinayrayapati/rv32i**
       - cmd: **cd rv32i**
-### 3. Simulation
+### 4.3. Simulation
 1. for compilation and simulation use below command
       - cmd: **iverilog iiitb_rv32i.v iiitb_rv32i_tb.v -o output_file**
            - it will create iiitb_rv32i.vcd dump file that can be used to check waveform
            - here -o is to tell output file (for now im not seeing any use case with this file)
-### 4. output checking using GTKWave
+### 4.4. output checking using GTKWave
 1. Open gtkwave and load vcd file  
         - cmd: **gtkwave iiitb_rv32i.vcd &**  
 
