@@ -136,7 +136,7 @@ steps3,4,5,6,7 explaind in below image. **Note: RTL side PC is incremented by 1 
    2. SRL:EX_MEM_ALUOUT <= ID_EX_A >> ID_EX_B;
       - not excercized
 
-Look into below diagram:
+**<ins>Conclusion:</ins>** Look into below diagram:
 
 ![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/826de386-563b-4720-9385-5837ea3ee481)
 
