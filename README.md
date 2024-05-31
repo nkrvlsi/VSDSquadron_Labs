@@ -714,5 +714,5 @@ all signlas snapshot:
 <img width="808" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/bd84c5df-83c6-409b-a8a5-5f897209c392">
 
 
-
+## 5. Synthesis
 
