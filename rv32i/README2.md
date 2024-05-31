@@ -156,10 +156,25 @@ steps3,4,5,6,7 explaind in below image. **Note: RTL side PC is incremented by 1 
              - Store **SW:DM[EX_MEM_ALUOUT]<=REG[EX_MEM_IR[11:7]];**
    -  Finally **Write back** stage -> ALU output is written to a register. i.e., ex: REG[MEM_WB_IR[11:7]] <= MEM_WB_ALUOUT.
 
-all signlas snapshot:
+all signlas snapshot:  
 <img width="808" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/bd84c5df-83c6-409b-a8a5-5f897209c392">
 
 ## 5. Synthesis
+### 5.1 Synthesis
+Synthesis is the process of **converting RTL code**, typically written in hardware description languages like Verilog or VHDL, **into a gate-level netlist**. It involves mapping the functionality specified in the RTL code to a library of standard cells, such as NAND, NOR, XOR gates, etc., provided by the target technology. 
+   - Inputs    : RTL, Technology libraries, Constraints (Environment, clocks, IO delays etc.)
+   - Outputs   : Netlist , SDC, Reports etc.
+     
+Synthesis takes place in multiple steps:
+   - Converting RTL into simple logic gates.
+   - Mapping those gates to actual technology-dependent logic gates available in the technology libraries.
+   - Optimizing the mapped netlist keeping the constraints set by the designer intact.
+     
+### 5.2 Required Files for Synthesis:
 
+To perform synthesis effectively, several files are essential:
+**<ins>1. RTL Code<ins>:** The RTL code serves as the input, written in hardware description languages like Verilog or VHDL, which captures the desired behavior of the design.
+**<ins>2. Technology Libraries<ins>:** These libraries provide a collection of standard cells, gates, and other components specific to the target technology.
+**<ins>3. Constraint File<ins>:** The constraint file guides the synthesis tool, providing additional information and specifications for optimizing the netlist generation. It includes details such as timing constraints, power targets, and area requirements.
 
 
