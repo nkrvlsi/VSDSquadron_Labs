@@ -172,9 +172,9 @@ Synthesis takes place in multiple steps:
      
 ### 5.2 Required Files for Synthesis:
 
-To perform synthesis effectively, several files are essential:
-**<ins>1. RTL Code<ins>:** The RTL code serves as the input, written in hardware description languages like Verilog or VHDL, which captures the desired behavior of the design.
-**<ins>2. Technology Libraries<ins>:** These libraries provide a collection of standard cells, gates, and other components specific to the target technology.
-**<ins>3. Constraint File<ins>:** The constraint file guides the synthesis tool, providing additional information and specifications for optimizing the netlist generation. It includes details such as timing constraints, power targets, and area requirements.
+To perform synthesis effectively, several files are essential:  
+**<ins>1. RTL Code<ins>:** The RTL code serves as the input, written in hardware description languages like Verilog or VHDL, which captures the desired behavior of the design.  
+**<ins>2. Technology Libraries<ins>:** These libraries provide a collection of standard cells, gates, and other components specific to the target technology.  
+**<ins>3. Constraint File<ins>:** The constraint file guides the synthesis tool, providing additional information and specifications for optimizing the netlist generation. It includes details such as timing constraints, power targets, and area requirements.  
 
 
