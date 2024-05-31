@@ -143,7 +143,8 @@ steps3,4,5,6,7 explaind in below image. **Note: RTL side PC is incremented by 1 
    - above diagram we can clearly see that PC is incremented by 1 each clock
    - we know from block diagram we had 3 types of memory here, 1. register 2. IMEM - instruction Memory 3. DMEM - Data Memory
    - **Instrcion code** is preloaded into  IMEM as below
-     <img width="230" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/03e2be7f-57e8-4123-9532-6b7f607cbbed">
+        <img width="230" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/03e2be7f-57e8-4123-9532-6b7f607cbbed">
+     
    - **Decode Stage** we are reading register data and writing into r1,r2 register.
         - loading A,B, RD, IR, Immediate, PC etc from register memory.
      <img width="260" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5f4ab972-74e9-4b12-a9fb-3f87af3ac665">
