@@ -47,9 +47,9 @@ Instructions we use here are classified in 5 types.
 2. Instructions performed in a 5-stage pipeline ISA.  
      1. Instruction **Fetch** (IF)    - Read instruction from instruction memory.
      2. Intrction **Decode** (ID)     - Read program registers & identify type of operation.
-     3. **execute**                   - Compute value or address. performs type of opertation on data.
+     3. **execute**                   - Compute value or address. performs type of opertation on data. finally ALU out is generated.
      4. **Memory** access (Mem Rd/Wr) - Read or write back data. Load(I) & Store(S) instructions transfer value between register <----> memory
-     5. **Write Back** (WB)           - program registers. Result of the instruction will be written back to the register file.
+     5. **Write Back** (WB)           - program registers. Result of the instruction will be written back to the register.
 
 3. Check waveform:
    1. Check clk running and reset release
@@ -73,8 +73,8 @@ Instructions we use here are classified in 5 types.
          - ID_EX_IR[14:12] tells type of operation to perform: BEQ=3'd0, BNE=3'd1
    7. check if condition ID_EX_IR[6:0]=3 (tells SH_Type)
           - ID_EX_IR[14:12] tells type of operation to perform: SLL=3'd0, SRL=3'd1
-steps3,4,5,6,7 explaind in below image.
-<img width="805" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/cdeac2c5-11b2-487b-b2d6-6bb7b4a2c6e7">
+steps3,4,5,6,7 explaind in below image. **Note: RTL side PC is incremented by 1 only(suppose to be +4).**
+<img width="805" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/cdeac2c5-11b2-487b-b2d6-6bb7b4a2c6e7"> 
 
 **<ins>R-Type:</ins>**  
 
@@ -135,6 +135,23 @@ steps3,4,5,6,7 explaind in below image.
       - not excercized
    2. SRL:EX_MEM_ALUOUT <= ID_EX_A >> ID_EX_B;
       - not excercized
-   3. 
-       
+
+Look into below diagram:
+
+![image](https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/826de386-563b-4720-9385-5837ea3ee481)
+
+   - above diagram we can clearly see that PC is incremented by 1 each clock
+   - we know from block diagram we had 3 types of memory here, 1. register 2. IMEM - instruction Memory 3. DMEM - Data Memory
+   - **Instrcion code** is preloaded into  IMEM as below
+     <img width="230" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/03e2be7f-57e8-4123-9532-6b7f607cbbed">
+   - **Decode Stage** we are reading register data and writing into r1,r2 register.
+        - loading A,B, RD, IR, Immediate, PC etc from register memory.
+     <img width="260" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/5f4ab972-74e9-4b12-a9fb-3f87af3ac665">
+
+   - **Execution stage** we are performing certain operation between registers like add, sub, sll etc and final output of the operand is written to  EX_MEM_ALUOUT[31:0].
+   - **Memory stage** from RTL side: computed EX_MEM_ALUOUT is written to MEM_WB_ALUOUT.
+        - Incase of Mem type:
+             - load **LW:MEM_WB_LDM <= DM[EX_MEM_ALUOUT];**
+             - Store **SW:DM[EX_MEM_ALUOUT]<=REG[EX_MEM_IR[11:7]];**
+   -  Finally **Write back** stage -> ALU output is written to a register. i.e., ex: REG[MEM_WB_IR[11:7]] <= MEM_WB_ALUOUT.
 
