@@ -182,7 +182,7 @@ It is a tool we use to convert out RTL design code to netlist.
 **<ins>Yosys:</ins>**  
 Yosys is a Verilog RTL synthesis framework to perform logic **synthesis, elaboration**, and converting a subset of the Verilog Hardware Description Language (HDL) into a **BLIF netlist**.  
 
-installing Yosys:
+**<ins>installing Yosys:</ins>**
    - **cmd:** **sudo apt install yosys**
 
 Now you need to create a yosys_run.sh file , which is the yosys script file used to run the synthesis. The contents of the yosys_run file are given below 
@@ -206,8 +206,23 @@ write_verilog -noattr iiitb_rv32i_synth.v
 ```
 <img width="392" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/2f656d09-1b94-43d5-ad98-bc3674080538">
 
+**<ins>running Yosys:</ins>**
 
+termianl type below commands
+   - **cmd: yosys**
+   - **cmd: script yosysrun.sh**
+     
+Now **synthesized netlist is generated in iiitb_rv32i_synth.v** file. 
 
+<img width="664" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/6147abf5-8c29-4661-aee2-1d092438c784">
+
+## 6. Gate level simulation - GLS
+
+GLS is generating the simulation output by running test bench with netlist file generated from synthesis as DUT. Netlist is logically same as RTL code, therefore, same test bench can be used for it. We perform this to verify logical correctness of the design after synthesizing it. Also ensuring the timing of the design is met. 
+
+Folllowing are the commands to run the GLS simulation:
+   cmd: **iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 verilog_model/primitives.v verilog_model/sky130_fd_sc_hd.v iiitb_rv32i_synth.v iiitb_rv32i_tb.v**  
+      - above command we are including 2 extra verilog_model because some modules inside these are isntantiated in iiitb_rv32i_synth.v file.
 
 
 
