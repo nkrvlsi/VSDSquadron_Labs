@@ -224,7 +224,7 @@ GLS is generating the simulation output by running test bench with netlist file 
 
    cmd: **iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 verilog_model/primitives.v verilog_model/sky130_fd_sc_hd.v iiitb_rv32i_synth.v iiitb_rv32i_tb.v**  
    
-      - in above command we are including 2 extra verilog_models because some modules inside these are isntantiated in iiitb_rv32i_synth.v file.  
+in above command we are including 2 extra verilog_models because some modules inside these are isntantiated in iiitb_rv32i_synth.v file.  
 
 
 
