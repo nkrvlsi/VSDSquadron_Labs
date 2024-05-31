@@ -156,3 +156,8 @@ steps3,4,5,6,7 explaind in below image. **Note: RTL side PC is incremented by 1 
              - Store **SW:DM[EX_MEM_ALUOUT]<=REG[EX_MEM_IR[11:7]];**
    -  Finally **Write back** stage -> ALU output is written to a register. i.e., ex: REG[MEM_WB_IR[11:7]] <= MEM_WB_ALUOUT.
 
+all signlas snapshot:
+<img width="808" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/bd84c5df-83c6-409b-a8a5-5f897209c392">
+
+
+
