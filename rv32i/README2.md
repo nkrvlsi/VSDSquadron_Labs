@@ -226,6 +226,7 @@ GLS is generating the simulation output by running test bench with netlist file 
    
 in above command we are including 2 extra verilog_models because some modules inside these are isntantiated in iiitb_rv32i_synth.v file.  
 
+TODO  - waveform checking pending
 
 ## 7. Physical Design
 
