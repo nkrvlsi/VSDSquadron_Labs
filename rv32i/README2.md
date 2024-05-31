@@ -220,9 +220,10 @@ Now **synthesized netlist is generated in iiitb_rv32i_synth.v** file.
 
 GLS is generating the simulation output by running test bench with netlist file generated from synthesis as DUT. Netlist is logically same as RTL code, therefore, same test bench can be used for it. We perform this to verify logical correctness of the design after synthesizing it. Also ensuring the timing of the design is met.  
 
-Folllowing are the commands to run the GLS simulation:  
+6.1 Folllowing are the commands to run the GLS simulation:  
 
    cmd: **iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 verilog_model/primitives.v verilog_model/sky130_fd_sc_hd.v iiitb_rv32i_synth.v iiitb_rv32i_tb.v**  
+   
       - in above command we are including 2 extra verilog_models because some modules inside these are isntantiated in iiitb_rv32i_synth.v file.  
 
 
