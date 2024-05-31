@@ -713,6 +713,68 @@ steps3,4,5,6,7 explaind in below image.
 all signlas snapshot:  
 <img width="808" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/bd84c5df-83c6-409b-a8a5-5f897209c392">
 
-
 ## 5. Synthesis
+### 5.1 Synthesis
+Synthesis is the process of **converting RTL code**, typically written in hardware description languages like Verilog or VHDL, **into a gate-level netlist**. It involves mapping the functionality specified in the RTL code to a library of standard cells, such as NAND, NOR, XOR gates, etc., provided by the target technology. 
+   - Inputs    : RTL, Technology libraries, Constraints (Environment, clocks, IO delays etc.)
+   - Outputs   : Netlist , SDC, Reports etc.
+     
+Synthesis takes place in multiple steps:
+   - Converting RTL into simple logic gates.
+   - Mapping those gates to actual technology-dependent logic gates available in the technology libraries.
+   - Optimizing the mapped netlist keeping the constraints set by the designer intact.
+     
+### 5.2 Required Files for Synthesis:
+To perform synthesis effectively, several files are essential:  
 
+**<ins>1. RTL Code<ins>:** The RTL code serves as the input, written in hardware description languages like Verilog or VHDL, which captures the desired behavior of the design.  
+**<ins>2. Technology Libraries<ins>:** These libraries provide a collection of standard cells, gates, and other components specific to the target technology.  
+**<ins>3. Constraint File<ins>:** The constraint file guides the synthesis tool, providing additional information and specifications for optimizing the netlist generation. It includes details such as timing constraints, power targets, and area requirements.  
+
+### 5.2 Synthesizer: tool: Yosys
+It is a tool we use to convert out RTL design code to netlist.  
+**<ins>Yosys:</ins>**  
+Yosys is a Verilog RTL synthesis framework to perform logic **synthesis, elaboration**, and converting a subset of the Verilog Hardware Description Language (HDL) into a **BLIF netlist**.  
+
+**<ins>installing Yosys:</ins>**
+   - **cmd:** **sudo apt install yosys**
+
+Now you need to create a yosys_run.sh file , which is the yosys script file used to run the synthesis. The contents of the yosys_run file are given below 
+
+```
+# read design
+
+read_verilog iiitb_rv32i.v
+
+# generic synthesis
+synth -top iiitb_rv32i
+
+# mapping to mycells.lib
+dfflibmap -liberty ./lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+proc; opt
+abc -liberty ./lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime,{D};strash;dch,-f;map,-M,1,{D}
+clean
+flatten
+# write synthesized design
+write_verilog -noattr iiitb_rv32i_synth.v
+```
+<img width="392" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/2f656d09-1b94-43d5-ad98-bc3674080538">
+
+**<ins>running Yosys:</ins>**
+
+termianl type below commands
+   - **cmd: yosys**
+   - **cmd: script yosysrun.sh**
+     
+Now **synthesized netlist is generated in iiitb_rv32i_synth.v** file. 
+
+<img width="664" alt="image" src="https://github.com/nkrvlsi/VSDSquadron_Labs/assets/170950241/6147abf5-8c29-4661-aee2-1d092438c784">
+
+## 6. Gate level simulation - GLS
+
+GLS is generating the simulation output by running test bench with netlist file generated from synthesis as DUT. Netlist is logically same as RTL code, therefore, same test bench can be used for it. We perform this to verify logical correctness of the design after synthesizing it. Also ensuring the timing of the design is met.  
+
+### 6.1 Folllowing are the commands to run the GLS simulation:  
+
+   **cmd: iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 verilog_model/primitives.v verilog_model/sky130_fd_sc_hd.v iiitb_rv32i_synth.v iiitb_rv32i_tb.v**  
+   
